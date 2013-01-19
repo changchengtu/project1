@@ -6,11 +6,43 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+<body  onresize = "adjustWidth()" style="background-color:#666666">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <div id="all">
+    <div id="top">
+      <div id="top-left"><%=link_to image_tag("#{'logo.png'}"), root_path%></div>
+      <div id="top-right">
+	<div id="top-right-briefintro"></div>
+	<div id="top-right-bar">
+	  <ul>
+	    <li><%= link_to "contact us", new_home_path%></li>
+	    <li><%= link_to "teacher login", new_user_session_path%></li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
+
+<script>
+adjustWidth();
+
+function adjustWidth(){
+  var w = 0;
+  var mysize = 1000;
+  if (document.body.clientWidth){
+    w = document.body.clientWidth;
+  }
+  var allDiv = document.getElementById("all");
+  var st = (w-1000)/2;
+  if(st>0){
+    allDiv.style.left = st+"px";
+  }
+}
+</script>
+
