@@ -1,16 +1,21 @@
-question list
 </br>
-<table class="feedbackTopic">
-        <thead>
-                <tr><th>topic</th></tr>
-        </thead>
-	 <tbody>
-                <% @showFeedbacks.each do |show| -%>
-                        <tr><td><%=link_to show.topic, home_path(show)%></td></tr>
-                <% end-%>
-        </tbody>
-</table>
+<div id="topicList">
+  <table class="feedbackTopic">
+          <thead>
+                  <tr><th>topic</th></tr>
+          </thead>
+	   <tbody>
+                  <% @showFeedbacks.each do |show| -%>
+                          <tr><td><%=link_to show.topic, home_path(show)%></td></tr>
+                  <% end-%>
+          </tbody>
+  </table>
+</div>
 
+</br>
+I have a topic!
+</br>
+</br>
 
 <%= form_tag '/home', :id=>'feedbackForm', :method=>nil  do %>
         <%= label :feedback, :name, '名稱'%>

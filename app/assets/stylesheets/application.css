@@ -16,7 +16,6 @@
   position:absolute;
   height: auto; 
   width: 1000px; 
-  background-color: #ff99ff;
 }
 
 #top {
@@ -25,8 +24,7 @@
   border-top-style:solid; 
   border-bottom-style:solid;
   border-width:5px;
-  border-color: #666666;
-  background-color: #9999ff;
+  border-color: transparent;
 }
 
 #top-left {
@@ -34,21 +32,21 @@
   width: 500px;
   border-right-style: solid;
   border-width: 5px; 
-  border-color: #666666; 
+  border-color: transparent; 
   float: left;
 }
 
 #top-right {
   height: 202px; 
   width: 494px; 
-  background-color: #ff6600; 
+  background-color: #ffffff; 
   float: left;
 }
 
 #top-right-briefintro {
   height: 160px;
   width: 494px;
-  background-color: #ff0000;
+  background-color: #ffffff;
   float: left;
 }
 
@@ -68,7 +66,7 @@
 }
 
 #top-right-bar li {
-        width: 110px;
+        width: 100px;
         float: right;
         background-color: #00ced1;
         text-align: center;
@@ -78,7 +76,7 @@
 
 #top-right-bar li a {
   list-style-type:none;
-  font-size: 18px;
+  font-size: 16px;
   color: blue;
 }
 
