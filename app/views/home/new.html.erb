@@ -1,0 +1,33 @@
+question list
+</br>
+<table class="feedbackTopic">
+        <thead>
+                <tr><th>topic</th></tr>
+        </thead>
+	 <tbody>
+                <% @showFeedbacks.each do |show| -%>
+                        <tr><td><%=link_to show.topic, home_path(show)%></td></tr>
+                <% end-%>
+        </tbody>
+</table>
+
+
+<%= form_tag '/home', :id=>'feedbackForm', :method=>nil  do %>
+        <%= label :feedback, :name, '名稱'%>
+        <%= text_field :feedback, :name%>
+
+        <%= label :feedback, :phone,'電話'%>
+        <%= text_field :feedback, :phone%>
+
+        <%= label :feedback, :email,'email'%>
+        <%= text_field :feedback, :email%>
+
+        <%= label :feedback, :topic,'topic'%>
+        <%= text_field :feedback, :topic%>
+
+        <%= label :feedback, :context, '留言'%>
+        <%= text_area :feedback, :context%>
+
+        <%= submit_tag '確定'%>
+<% end%>
+

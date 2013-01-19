@@ -1,0 +1,55 @@
+question's context</br>
+<%=@showFeedbackContext.context%>
+
+</br></br></br>reply by teacher</br>
+
+<table class="reply">
+        <thead>
+                <tr><th>回應</th></tr>
+        </thead>
+         <tbody>
+                <% @showAnswerContext.each do |show| -%>
+                        <tr><td><%=show.context%></td></tr>
+                <% end-%>
+        </tbody>
+</table>
+
+</br>
+___________________________________________________________________________________________________
+</br>
+
+
+
+<table class="discuss">
+        <thead>
+                <tr><th>discuss</th></tr>
+        </thead>
+         <tbody>
+                <% @showDiscussContext.each do |show| -%>
+                        <tr><td><%=show.context%></td></tr>
+                <% end-%>
+        </tbody>
+</table>
+
+
+
+
+<%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
+        <%= label :discuss, :name%>      
+	<%= text_field :discuss, :name%>
+
+	<%= label :discuss, :feedback_id%>
+        <%= text_field :discuss, :feedback_id, :value=>@id%>
+
+        <%= label :discuss, :phone,'電話'%>
+        <%= text_field :discuss, :phone%>
+
+        <%= label :discuss, :email,'email'%>
+        <%= text_field :discuss, :email%>
+
+        <%= label :discuss, :context%>
+        <%= text_area :discuss, :context%>
+
+        <%= submit_tag '確定'%>
+<% end%>
+
