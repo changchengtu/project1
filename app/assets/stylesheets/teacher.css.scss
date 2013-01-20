@@ -1,3 +1,27 @@
 // Place all the styles related to the teacher controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#feedback {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  border-bottom: 2px solid #7f7f7f;
+}
+
+#answerContext {
+  height: auto;
+  width: 80%;
+  margin-right: 5%;
+  float: right;
+  background-color: #cff6ff;
+}
+
+#answerContext table td {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+#answerField {
+  width: 60%;
+  margin: 0 auto;
+}

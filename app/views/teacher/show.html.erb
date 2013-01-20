@@ -1,68 +1,80 @@
-question's context</br>
-<div id="feedbackContext">
-<%=@showFeedbackContext.context%>
+</br>
+<div id="feedback">
+  <div id="feedbackTopic">
+    <font size='5' face="微軟正黑體"><b><%=@showFeedbackContext.topic%></b></font>
+  </div>
+  </br>
+  <%=@showFeedbackContext.context%>
+  </br>
+  </br>
 </div>
-</br></br></br>reply by teacher</br>
-
-<table class="reply">
+<div id="answerContext">
+    <table class="reply">
         <thead>
-                <tr><th>回應</th></tr>
+                <tr><th><font size='5' face="微軟正黑體">校方回應</font></th></tr>
         </thead>
          <tbody>
                 <% @showAnswerContext.each do |show| -%>
-                        <tr><td><%=show.context%></td></tr>
+                        <tr><td></br><%=show.context%></br></br></td></tr>
                 <% end-%>
         </tbody>
-</table>
-
+    </table>
+</div>
 </br>
+<div id="answerField">
+  <%= form_tag '/teacher',:method=>nil  do %>
+        <%= hidden_field :answer, :name, :value=>"校方"%>
 
-<%= form_tag '/teacher',:method=>nil  do %>
-        <%= label :answer, :name, "name"%>
-        <%= text_field :answer, :name, :value=>"teacher"%>
+        <%= hidden_field :answer, :feedback_id, :value=>@id%>
 
-        <%= label :answer, :feedback_id%>
-        <%= text_field :answer, :feedback_id, :value=>@id%>
-
-        <%= label :answer, :context, '留言'%>
+        <%= label :answer, :context, '回應'%>
         <%= text_area :answer, :context%>
 
         <%= submit_tag '確定'%>
-<% end%>
+  <% end%>
+</div>
+
 </br>
 </br>
 
 
-
+<div id="discussDiv">
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<font face="微軟正黑體" size="5"><b>回應</b></font>
 <table class="discuss">
         <thead>
-                <tr><th>discuss</th></tr>
+                <tr><th></th></tr>
         </thead>
          <tbody>
                 <% @showDiscussContext.each do |show| -%>
-                        <tr><td><%=show.context%></td></tr>
+                        <tr>
+                          <td>
+                            <font face="微軟正黑體" color="#7f4040"><b><%=show.name%>提到...</b></font>
+                            </br>
+                            <font face="微軟正黑體"><%=show.context%></font>
+                            </br>
+                            </br>       
+                          </td>
+                        </tr>
                 <% end-%>
         </tbody>
-</table>
+  </table>
 
+  <%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
+        <%= label :discuss, :name, "稱呼"%>      
+        <%= text_field :discuss, :name, :value=>"傅光國中"%>
 
+        <%= hidden_field :discuss ,:feedback_id, :value=>@id%>
 
-
-<%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
-        <%= label :discuss, :name%>
-        <%= text_field :discuss, :name%>
-
-        <%= label :discuss, :feedback_id%>
-        <%= text_field :discuss, :feedback_id, :value=>@id%>
-
-        <%= label :discuss, :phone,'電話'%>
-        <%= text_field :discuss, :phone%>
-
-        <%= label :discuss, :email,'email'%>
-        <%= text_field :discuss, :email%>
-
-        <%= label :discuss, :context%>
+        <%= label :discuss, :context, "留言"%>
         <%= text_area :discuss, :context%>
 
         <%= submit_tag '確定'%>
-<% end%>
+  <% end%>
+</div>
+

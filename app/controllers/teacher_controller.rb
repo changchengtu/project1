@@ -11,7 +11,7 @@ class TeacherController < ApplicationController
 		@answer = Answer.new(params[:answer])
                 @answer.save
 
-                redirect_to new_home_path
+                redirect_to teacher_path(params[:answer][:feedback_id])
 	end
 
 	def show

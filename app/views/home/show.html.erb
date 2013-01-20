@@ -22,15 +22,18 @@
 </div>
 
 </br>
-</br>
-</br>
-</br>
-</br>
 
 <div id="discussDiv">
-  <table class="discuss">
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<font face="微軟正黑體" size="5"><b>討論</b></font>
+<table class="discuss">
         <thead>
-                <tr><th><font face="微軟正黑體">討論</font></th></tr>
+                <tr><th></th></tr>
         </thead>
          <tbody>
                 <% @showDiscussContext.each do |show| -%>
@@ -60,10 +63,10 @@
 	
 	<%= hidden_field :discuss ,:feedback_id, :value=>@id%>
 
-        <%= label :discuss, :context%>
+        <%= label :discuss, :context, "留言"%>
         <%= text_area :discuss, :context%>
 
         <%= submit_tag '確定'%>
   <% end%>
-<div>
+</div>
 
