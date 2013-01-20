@@ -2,13 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #topicList {
+  width: 90%;
+  margin: 0 auto;
   height: auto;
-  background-color: #ffbfdf;
+  background-color: white;
 }
 
-#feedbackContext {
+#feedbackForm {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#feedbackTopic {
+  border-bottom: 2px solid #7f7f7f;
+}
+
+#feedback {
+  width: 90%;
+  margin: 0 auto;
+  height: auto; 
+  border-bottom: 2px solid #7f7f7f;
+}
+
+#answerContext {
   height: auto;
-  background-color: green;  
+  width: 900px;
+  float: right;
+  background-color: #cff6ff;
 }
 
 #topicList table{
@@ -25,5 +45,14 @@
 #topicList table th, #topicList table td {
   padding: 4px;
   text-align: left;
+}
+
+#discussDiv {
+  width:600px;
+  margin: 0 auto;
+}
+
+#discuss table th {
+  border-bottom: 2px solid #7f7f7f;
 }
 

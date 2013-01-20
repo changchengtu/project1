@@ -1,46 +1,58 @@
-question's context</br>
-<div id="feedbackContext">
-<%=@showFeedbackContext.context%>
-</div>
-</br></br></br>reply by teacher</br>
-
-<table class="reply">
+</br>
+<div id="feedback">
+  <div id="feedbackTopic">
+    <font size='5' face="微軟正黑體"><b><%=@showFeedbackContext.topic%></b></font>
+  </div>
+  </br> 
+  <%=@showFeedbackContext.context%>
+  </br>
+  </br>
+</div> 
+<div id="answerContext">
+    <table class="reply">
         <thead>
-                <tr><th>回應</th></tr>
+                <tr><th><font size='5' face="微軟正黑體">校方回應</font></th></tr>
         </thead>
          <tbody>
                 <% @showAnswerContext.each do |show| -%>
-                        <tr><td><%=show.context%></td></tr>
+                        <tr><td></br><%=show.context%></br></br></td></tr>
                 <% end-%>
         </tbody>
-</table>
+    </table>
+</div>
 
 </br>
-___________________________________________________________________________________________________
+</br>
+</br>
+</br>
 </br>
 
-
-
-<table class="discuss">
+<div id="discussDiv">
+  <table class="discuss">
         <thead>
-                <tr><th>discuss</th></tr>
+                <tr><th><font face="微軟正黑體">討論</font></th></tr>
         </thead>
          <tbody>
                 <% @showDiscussContext.each do |show| -%>
-                        <tr><td><%=show.context%></td></tr>
+                        <tr>
+			  <td>
+			    <font face="微軟正黑體" color="#7f4040"><b><%=show.name%>提到...</b></font>
+			    </br>
+			    <font face="微軟正黑體"><%=show.context%></font>
+			    </br>
+			    </br>	
+			  </td>
+			</tr>
                 <% end-%>
         </tbody>
-</table>
+  </table>
 
-
-
-
-<%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
-        <%= label :discuss, :name%>      
+  <%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
+        <%= label :discuss, :name, "稱呼"%>      
 	<%= text_field :discuss, :name%>
 
 	<%= label :discuss, :feedback_id%>
-        <%= text_field :discuss, :feedback_id, :value=>@id%>
+        <%= text_field :discuss, :feedback_id, :value=>@id, :disabled=>true%>
 
         <%= label :discuss, :phone,'電話'%>
         <%= text_field :discuss, :phone%>
@@ -52,5 +64,6 @@ ________________________________________________________________________________
         <%= text_area :discuss, :context%>
 
         <%= submit_tag '確定'%>
-<% end%>
+  <% end%>
+<div>
 

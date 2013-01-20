@@ -6,20 +6,20 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body  onresize = "adjustWidth()" style="background-color#7f7f7ff">
+<body  onresize = "adjustWidth()" style="background-color:#9fbf7f">
   <%= javascript_include_tag :defaults %>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <div id="back-bar">
-    <ul>
+    <ul><font face="微軟正黑體">
       <% if user_signed_in? %>
-        <li><%= link_to 'Sign out', destroy_user_session_path, :method => 'delete'%></li>
-	<li><%= link_to 'topiclist', new_teacher_path%></li>
-	<li><%= link_to 'teacherhome', teacher_index_path%></li>
+        <li><%= link_to '登出', destroy_user_session_path, :method => 'delete'%></li>
+	<li><%= link_to '問題列表', new_teacher_path%></li>
+	<li><%= link_to '後台主頁', teacher_index_path%></li>
       <% else %>
-        <li><%= link_to 'Sign in', new_user_session_path %></li>
+        <li><%= link_to '登入', new_user_session_path %></li>
       <% end %>
-    </ul>
+    </ul></font>
   </div>
   <div id="all">
     <div id="top">
@@ -27,9 +27,9 @@
       <div id="top-right">
 	<div id="top-right-briefintro"></div>
 	<div id="top-right-bar">
-	  <ul>
-	     <li><%= link_to "contact us", new_home_path%></li>
-	  </ul>
+	  <ul><font face="微軟正黑體">
+	     <li><%= link_to "聯絡我們", new_home_path%></li>
+	  </ul></font>
 	</div>
       </div>
     </div>

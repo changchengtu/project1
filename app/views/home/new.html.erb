@@ -2,7 +2,7 @@
 <div id="topicList">
   <table class="tableTopicList">
           <thead>
-                  <tr><th>topic</th><th>name</th></tr>
+                  <tr><th>主題</th><th>發問者</th></tr>
           </thead>
 	   <tbody>
                   <% @showFeedbacks.each do |show| -%>
@@ -16,11 +16,13 @@
 </div>
 
 </br>
-I have a topic!
 </br>
 </br>
 
-<%= form_tag '/home', :id=>'feedbackForm', :method=>nil  do %>
+<div id='feedbackForm'>
+  <font face="微軟正黑體" size="5"><b>我有問題要問！</b></font>
+  <font face="微軟正黑體">
+  <%= form_tag '/home', :method=>nil  do %>
         <%= label :feedback, :name, '名稱'%>
         <%= text_field :feedback, :name%>
 
@@ -30,12 +32,13 @@ I have a topic!
         <%= label :feedback, :email,'email'%>
         <%= text_field :feedback, :email%>
 
-        <%= label :feedback, :topic,'topic'%>
+        <%= label :feedback, :topic,'主題'%>
         <%= text_field :feedback, :topic%>
 
-        <%= label :feedback, :context, '留言'%>
+        <%= label :feedback, :context, '問題'%>
         <%= text_area :feedback, :context%>
 
-        <%= submit_tag '確定'%>
-<% end%>
-
+        <%= submit_tag '確定送出'%>
+  <% end%>
+  </font>
+</div>
