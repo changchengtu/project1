@@ -11,18 +11,18 @@
   background-color: blue;  
 }
 
-table {
+#topicList table{
   
   border-collapse: collapse;
   width: 100%;
   border-bottom: 2px solid black;
 }
-table th {
+#topicList table th {
   border: 2px solid white;
   font-weight: bold;
   background-color: wheat;
 }
-table th, table td {
+#topicList table th, #topicList table td {
   padding: 4px;
   text-align: left;
 }

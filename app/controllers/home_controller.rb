@@ -24,6 +24,6 @@ class HomeController < ApplicationController
 	def savediscuss
 		@discuss = Discuss.new(params[:discuss])
                 @discuss.save
-		redirect_to new_home_path
+		redirect_to home_path(params[:discuss][:feedback_id])
 	end
 end

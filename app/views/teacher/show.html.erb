@@ -1,0 +1,68 @@
+question's context</br>
+<div id="feedbackContext">
+<%=@showFeedbackContext.context%>
+</div>
+</br></br></br>reply by teacher</br>
+
+<table class="reply">
+        <thead>
+                <tr><th>回應</th></tr>
+        </thead>
+         <tbody>
+                <% @showAnswerContext.each do |show| -%>
+                        <tr><td><%=show.context%></td></tr>
+                <% end-%>
+        </tbody>
+</table>
+
+</br>
+
+<%= form_tag '/teacher',:method=>nil  do %>
+        <%= label :answer, :name, "name"%>
+        <%= text_field :answer, :name, :value=>"teacher"%>
+
+        <%= label :answer, :feedback_id%>
+        <%= text_field :answer, :feedback_id, :value=>@id%>
+
+        <%= label :answer, :context, '留言'%>
+        <%= text_area :answer, :context%>
+
+        <%= submit_tag '確定'%>
+<% end%>
+</br>
+</br>
+
+
+
+<table class="discuss">
+        <thead>
+                <tr><th>discuss</th></tr>
+        </thead>
+         <tbody>
+                <% @showDiscussContext.each do |show| -%>
+                        <tr><td><%=show.context%></td></tr>
+                <% end-%>
+        </tbody>
+</table>
+
+
+
+
+<%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
+        <%= label :discuss, :name%>
+        <%= text_field :discuss, :name%>
+
+        <%= label :discuss, :feedback_id%>
+        <%= text_field :discuss, :feedback_id, :value=>@id%>
+
+        <%= label :discuss, :phone,'電話'%>
+        <%= text_field :discuss, :phone%>
+
+        <%= label :discuss, :email,'email'%>
+        <%= text_field :discuss, :email%>
+
+        <%= label :discuss, :context%>
+        <%= text_area :discuss, :context%>
+
+        <%= submit_tag '確定'%>
+<% end%>

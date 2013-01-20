@@ -1,5 +1,5 @@
 class TeacherController < ApplicationController
-
+	before_filter :authenticate_user!
 	def index
 	end
 
@@ -15,7 +15,9 @@ class TeacherController < ApplicationController
 	end
 
 	def show
-		id = params[:id]
-                @showFeedbackContext = Feedback.find(id)
+		@id = params[:id]
+                @showFeedbackContext = Feedback.find(@id)
+                @showAnswerContext = Feedback.find(@id).answers.all
+                @showDiscussContext = Feedback.find(@id).discusses.all        
 	end
 end

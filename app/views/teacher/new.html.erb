@@ -1,0 +1,21 @@
+teacher new
+
+</br>
+<div id="topicList">
+  <table class="feedbackTopic">
+          <thead>
+		  <tr><th>topic</th><th>name</th></tr>
+          </thead>
+           <tbody>
+                  <% @showFeedbacks.each do |show| -%>
+			  <tr>
+                                <td><%=link_to show.topic, home_path(show)%></td>
+                                <td><%=show.name%></td>
+                          </tr>
+
+                  <% end-%>
+          </tbody>
+  </table>
+</div>
+
+

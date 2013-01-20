@@ -12,6 +12,33 @@
  *= require_tree .
  */
 
+#back-bar {
+  height:30px;
+  background-color:#bfbfbf;
+}
+
+#back-bar ul {
+
+  list-style:none;
+  margin-top: 0px;
+  padding:0px;
+  border-style:none;
+}
+
+#back-bar li {
+  width: 100px;
+  float: right;
+  text-align: center;
+  margin-right: 3px;
+  height: 30px;
+}
+
+#back-bar li a {
+  list-style-type:none;
+  font-size: 16px;
+  color: #404000;
+}
+
 #all {
   position:absolute;
   height: auto; 
@@ -54,7 +81,6 @@
   height: 30px;
   width: 494px;
   float: right;
-  background-color: #66ff66;
 }
 
 #top-right-bar ul {
@@ -66,18 +92,17 @@
 }
 
 #top-right-bar li {
-        width: 100px;
-        float: right;
-        background-color: #00ced1;
-        text-align: center;
-        margin-right: 2px;
-        height: 30px;
+  width: 100px;
+  float: right;
+  text-align: center;
+  margin-right: 3px;
+  height: 30px;
 }
 
 #top-right-bar li a {
   list-style-type:none;
   font-size: 16px;
-  color: blue;
+  color: #404000;
 }
 
 #main {
