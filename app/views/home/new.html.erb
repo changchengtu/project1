@@ -2,13 +2,18 @@
 <div id="topicList">
   <table class="tableTopicList">
           <thead>
-                  <tr><th>主題</th><th>發問者</th></tr>
+                  <tr>
+		    <th>主題</th>
+		    <th>發問者</th>
+		    <th>更新時間</th>
+		  </tr>
           </thead>
 	   <tbody>
                   <% @showFeedbacks.each do |show| -%>
                           <tr>
 				<td><%=link_to show.topic, home_path(show)%></td>
 				<td><%=show.name%></td>
+				<td><%=show.updated_at%></td>
 			  </tr>
                   <% end-%>
           </tbody>

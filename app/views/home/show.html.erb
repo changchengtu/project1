@@ -15,7 +15,8 @@
         </thead>
          <tbody>
                 <% @showAnswerContext.each do |show| -%>
-                        <tr><td></br><%=show.context%></br></br></td></tr>
+                        <tr><td></br><%=show.context%></br></br><%= show.updated_at%></td></tr>
+			
                 <% end-%>
         </tbody>
     </table>
@@ -24,9 +25,6 @@
 </br>
 
 <div id="discussDiv">
-</br>
-</br>
-</br>
 </br>
 </br>
 </br>
@@ -41,7 +39,7 @@
 			  <td>
 			    <font face="微軟正黑體" color="#7f4040"><b><%=show.name%>提到...</b></font>
 			    </br>
-			    <font face="微軟正黑體"><%=show.context%></font>
+			    <font face="微軟正黑體"><%=show.context%></br></br><%= show.updated_at%></font>
 			    </br>
 			    </br>	
 			  </td>

@@ -4,13 +4,14 @@ teacher new
 <div id="topicList">
   <table class="feedbackTopic">
           <thead>
-		  <tr><th>topic</th><th>name</th></tr>
+		  <tr><th>主題</th><th>姓名</th><th>時間</th></tr>
           </thead>
            <tbody>
                   <% @showFeedbacks.each do |show| -%>
 			  <tr>
                                 <td><%=link_to show.topic, teacher_path(show)%></td>
                                 <td><%=show.name%></td>
+				<td><%=show.updated_at%></td>
                           </tr>
 
                   <% end-%>
