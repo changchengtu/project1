@@ -9,7 +9,7 @@ teacher new
            <tbody>
                   <% @showFeedbacks.each do |show| -%>
 			  <tr>
-                                <td><%=link_to show.topic, home_path(show)%></td>
+                                <td><%=link_to show.topic, teacher_path(show)%></td>
                                 <td><%=show.name%></td>
                           </tr>
 
