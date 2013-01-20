@@ -15,6 +15,7 @@ class HomeController < ApplicationController
 	end
 	
 	def show
+		
 		@id = params[:id]
 		@showFeedbackContext = Feedback.find(@id)	
 		@showAnswerContext = Feedback.find(@id).answers.all
@@ -26,4 +27,5 @@ class HomeController < ApplicationController
                 @discuss.save
 		redirect_to home_path(params[:discuss][:feedback_id])
 	end
+
 end

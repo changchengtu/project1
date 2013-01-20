@@ -51,14 +51,14 @@
         <%= label :discuss, :name, "稱呼"%>      
 	<%= text_field :discuss, :name%>
 
-	<%= label :discuss, :feedback_id%>
-        <%= text_field :discuss, :feedback_id, :value=>@id, :disabled=>true%>
-
         <%= label :discuss, :phone,'電話'%>
         <%= text_field :discuss, :phone%>
 
+
         <%= label :discuss, :email,'email'%>
         <%= text_field :discuss, :email%>
+	
+	<%= hidden_field :discuss ,:feedback_id, :value=>@id%>
 
         <%= label :discuss, :context%>
         <%= text_area :discuss, :context%>

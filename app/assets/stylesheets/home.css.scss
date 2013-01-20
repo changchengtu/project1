@@ -8,6 +8,7 @@
   background-color: white;
 }
 
+
 #feedbackForm {
   width: 90%;
   margin: 0 auto;
@@ -26,9 +27,14 @@
 
 #answerContext {
   height: auto;
-  width: 900px;
+  width: 80%;
+  margin-right: 5%;
   float: right;
   background-color: #cff6ff;
+}
+
+#answerContext table td {
+  border-bottom: 1px solid #7f7f7f;
 }
 
 #topicList table{
