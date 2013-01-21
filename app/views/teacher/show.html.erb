@@ -15,7 +15,9 @@
         </thead>
          <tbody>
                 <% @showAnswerContext.each do |show| -%>
-                        <tr><td></br><%=show.context%></br></br><%=show.updated_at%></td></tr>
+                        <tr>
+				<td></br><%=show.context%></br></br><%=show.updated_at%><%= link_to "修改回應", edit_teacher_path(show)%></td>
+			</tr>
                 <% end-%>
         </tbody>
     </table>
@@ -67,7 +69,7 @@
 
   <%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
         <%= label :discuss, :name, "稱呼"%>      
-        <%= text_field :discuss, :name, :value=>"傅光國中"%>
+        <%= text_field :discuss, :name, :value=>"富光國中"%>
 
         <%= hidden_field :discuss ,:feedback_id, :value=>@id%>
 

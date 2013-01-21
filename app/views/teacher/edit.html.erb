@@ -1,0 +1,7 @@
+  <%= form_tag teacher_path(@answer),:method=>:put  do %>
+
+        <%= label :answer, :context, '回應'%>
+        <%= text_area :answer, :context%>
+
+        <%= submit_tag '確定'%>
+  <% end%>
