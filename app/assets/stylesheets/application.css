@@ -119,3 +119,12 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+
+#bottom {
+  text-align:center;
+  width: 1000px;
+  height: 100px;
+  background-color: #7f7f7f;
+
+  margin-top: 10px;
+}
