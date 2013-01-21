@@ -3,6 +3,9 @@ Project1::Application.routes.draw do
   devise_for :users
   devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end	
 
+  match "home/activity"=>"home#activity"
+  match "home/dreamcoffee"=>"home#dreamcoffee"
+  match "home/aboutus"=>"home#aboutus"
   post "home/savediscuss"=>"home#savediscuss"
   root :to => "home#index"
   resources :home

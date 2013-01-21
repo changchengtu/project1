@@ -3,6 +3,15 @@ class HomeController < ApplicationController
 	def index
 	end
 
+	def aboutus
+	end
+
+	def dreamcoffee
+	end
+
+	def activity
+	end
+	
 	def new
 		@showFeedbacks = Feedback.all		
 	end

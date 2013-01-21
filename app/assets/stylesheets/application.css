@@ -74,7 +74,8 @@
 
 #top-right-briefintro {
   height: 160px;
-  width: 494px;
+  width: 470px;
+  text-align:right;
   background-color: #ffffff;
   float: left;
 }
@@ -103,7 +104,7 @@
 
 #top-right-bar li a {
   list-style-type:none;
-  font-size: 16px;
+  font-size: 15px;
   color: #607f40;
 }
 

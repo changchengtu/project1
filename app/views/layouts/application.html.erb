@@ -23,18 +23,27 @@
     <div id="top">
       <div id="top-left"><%=link_to image_tag("#{'logo.png'}"), root_path%></div>
       <div id="top-right">
-	<div id="top-right-briefintro"></div>
+	<div id="top-right-briefintro">
+	  <h2><b><font face="微軟正黑體" color="#7f0000">夢 &nbsp;想 &nbsp;藝 &nbsp;文 &nbsp;客 &nbsp;棧&nbsp;</font></b></h2>
+	      <font face="微軟正黑體" size="3"><b>富光國中</b></font></br>
+	      <font face="微軟正黑體" size="2">發展學校多年&nbsp;&nbsp;持續打造夢想學校</br>培養學生一技之長&nbsp;&nbsp;讓學生體驗創業學習的歷程</br></font>
+
+	</div>
 	<div id="top-right-bar">
 	  <ul><font face="微軟正黑體">
 	    <% if user_signed_in?%>
 	    <% else%>
-	     <li><%= link_to "聯絡我們", new_home_path%></li>
+	      <li><%= link_to "聯絡我們", new_home_path%></li>
+	      <li><%= link_to "關於我們", home_aboutus_path%></li>
+	      <li><%= link_to "夢想POWER車", home_dreamcoffee_path%></li>
+	      <li><%= link_to "活動介紹", home_activity_path%></li>
 	    <%end%>
 	  </ul></font>
 	</div>
       </div>
     </div>
     <div id="main">
+      </br>
       <%= yield %>
     </div>
   </div>
