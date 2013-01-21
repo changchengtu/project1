@@ -11,6 +11,15 @@
  *= require_self
  *= require_tree .
  */
+.ui-jcoverflip {
+  position: relative;
+}
+      
+.ui-jcoverflip--item {
+  position: absolute;
+  display: block;
+}
+
 
 #back-bar {
   height:30px;
