@@ -20,9 +20,10 @@ class HomeController < ApplicationController
 	end
 
 	def create
+		params[:feedback][:context]=params[:feedback][:context].gsub(/\r\n?/, "\n")
 		@feedback = Feedback.new(params[:feedback])
 		@feedback.save
-		redirect_to new_home_path
+    		redirect_to new_home_path
 
 	end
 	
@@ -35,6 +36,7 @@ class HomeController < ApplicationController
 	end
 
 	def savediscuss
+		params[:discuss][:context]=params[:discuss][:context].gsub(/\r\n?/, "\n")
 		@discuss = Discuss.new(params[:discuss])
                 @discuss.save
 		redirect_to home_path(params[:discuss][:feedback_id])

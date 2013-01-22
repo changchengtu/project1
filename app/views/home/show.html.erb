@@ -1,21 +1,22 @@
 </br>
 <div id="feedback">
   <div id="feedbackTopic">
-    <font size='5' face="微軟正黑體"><b><%=@showFeedbackContext.topic%></b></font>
+    <font size='5' face="微軟正黑體"><b><%@showFeedbackContext.name%>提到...<%=@showFeedbackContext.topic%></br></b></font>
   </div>
-  </br> 
-  <%=@showFeedbackContext.context%>
+  <div id="feedbackContext"> 
+    <%= simple_format @showFeedbackContext.context%>
+  </div>
   </br>
   </br>
 </div> 
 <div id="answerContext">
+  <font size='5' face="微軟正黑體"><b>校方回應</b></font>
     <table class="reply">
         <thead>
-                <tr><th><font size='5' face="微軟正黑體">校方回應</font></th></tr>
         </thead>
          <tbody>
                 <% @showAnswerContext.each do |show| -%>
-                        <tr><td></br><%=show.context%></br></br><%= show.updated_at%></td></tr>
+                        <tr><td></br><%= simple_format show.context %></br></br><%= show.updated_at%></td></tr>
 			
                 <% end-%>
         </tbody>
@@ -39,7 +40,7 @@
 			  <td>
 			    <font face="微軟正黑體" color="#7f4040"><b><%=show.name%>提到...</b></font>
 			    </br>
-			    <font face="微軟正黑體"><%=show.context%></br></br><%= show.updated_at%></font>
+			    <font face="微軟正黑體"><%=simple_format show.context%></br></br><%= show.updated_at%></font>
 			    </br>
 			    </br>	
 			  </td>
@@ -50,7 +51,7 @@
 
   <%= form_tag '/home/savediscuss', :id=>'discuss',:method=>nil  do %>
         <%= label :discuss, :name, "稱呼"%>      
-	<%= text_field :discuss, :name%>
+	<%= text_field :discuss, :name, :value=>"匿名"%>
 
         <%= label :discuss, :phone,'電話'%>
         <%= text_field :discuss, :phone%>

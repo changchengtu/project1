@@ -27,20 +27,22 @@
 <div id='feedbackForm'>
   <font face="微軟正黑體" size="5"><b>我有問題要問！</b></font>
   <font face="微軟正黑體">
+
   <%= form_tag '/home', :method=>nil  do %>
+
         <%= label :feedback, :name, '名稱'%>
-        <%= text_field :feedback, :name%>
+        <%= text_field :feedback, :name, :value=>"匿名"%>
 
         <%= label :feedback, :phone,'電話'%>
         <%= text_field :feedback, :phone%>
 
         <%= label :feedback, :email,'email'%>
-        <%= text_field :feedback, :email%>
+        <%= email_field :feedback, :email%>
 
-        <%= label :feedback, :topic,'主題'%>
+        <%= label :feedback, :topic,'主題 *必填'%>
         <%= text_field :feedback, :topic%>	
 
-        <%= label :feedback, :context, '問題'%>
+        <%= label :feedback, :context, '問題 ＊必填'%>
         <%= text_area :feedback, :context%>
 
         <%= submit_tag '確定送出'%>

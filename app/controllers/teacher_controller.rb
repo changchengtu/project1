@@ -8,6 +8,7 @@ class TeacherController < ApplicationController
 	end
 
 	def create
+		params[:answer][:context]=params[:answer][:context].gsub(/\r\n?/, "\n")
 		@answer = Answer.new(params[:answer])
                 @answer.save
 
@@ -27,6 +28,7 @@ class TeacherController < ApplicationController
 
 	def update
   		@answer = Answer.find(params[:id])
+		params[:answer][:context]=params[:answer][:context].gsub(/\r\n?/, "\n")
   		@answer.update_attributes!(params[:answer])
   		flash[:notice] = "#{@answer.context} was successfully updated."
   		redirect_to teacher_path(@answer.feedback_id)

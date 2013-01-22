@@ -1,7 +1,7 @@
 </br>
 <div id="feedback">
   <div id="feedbackTopic">
-    <font size='5' face="微軟正黑體"><b><%=@showFeedbackContext.topic%></b></font>
+    <font size='5' face="微軟正黑體"><b><%=@showFeedbackContext.name%>問到.....<%=@showFeedbackContext.topic%></b></font>
   </div>
   </br>
   <%=@showFeedbackContext.context%>
@@ -16,7 +16,7 @@
          <tbody>
                 <% @showAnswerContext.each do |show| -%>
                         <tr>
-				<td></br><%=show.context%></br></br><%=show.updated_at%><%= link_to "修改回應", edit_teacher_path(show)%></td>
+				<td></br><%= simple_format show.context%></br></br><%=show.updated_at%><%= link_to "修改回應", edit_teacher_path(show)%></td>
 			</tr>
                 <% end-%>
         </tbody>
@@ -58,7 +58,7 @@
                           <td>
                             <font face="微軟正黑體" color="#7f4040"><b><%=show.name%>提到...</b></font>
                             </br>
-                            <font face="微軟正黑體"><%=show.context%></br></br><%=show.updated_at%></font>
+                            <font face="微軟正黑體"><%=simple_format show.context%></br></br><%=show.updated_at%></font>
                             </br>
                             </br>       
                           </td>

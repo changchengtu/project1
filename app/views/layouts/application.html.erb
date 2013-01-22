@@ -24,19 +24,29 @@ background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
 
 ">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=400625820030089";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <%= javascript_include_tag :defaults %>
-  <div id="back-bar">
-    <ul><font face="微軟正黑體">
-      <% if user_signed_in? %>
-        <li><%= link_to '登出', destroy_user_session_path, :method => 'delete'%></li>
-	<li><%= link_to '問題列表', new_teacher_path%></li>
-	<li><%= link_to '後台主頁', teacher_index_path%></li>
-      <% else %>
-        <li><%= link_to '登入', new_user_session_path %></li>
-      <% end %>
-    </ul></font>
+  <div class="fb-like-box" data-href="https://www.facebook.com/hakkaspots" data-width="250" data-show-faces="true" data-stream="true" data-header="true" style="float:right; margin-top:250px;height:300px"></div>
   </div>
   <div id="all">
+    <div id="back-bar">
+      <ul><font face="微軟正黑體">
+        <% if user_signed_in? %>
+          <li><%= link_to '登出', destroy_user_session_path, :method => 'delete'%></li>
+          <li><%= link_to '問題列表', new_teacher_path%></li>
+          <li><%= link_to '後台主頁', teacher_index_path%></li>
+        <% else %>
+          <li><%= link_to '教師登入', new_user_session_path %></li>
+        <% end %>
+      </ul></font>
+    </div>
     <div id="top">
       <div id="top-left"><%=link_to image_tag("#{'logo.png'}"), root_path%></div>
       <div id="top-right">
@@ -64,9 +74,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
       <%= yield %>
     </div>
     <div id="bottom">
-	<font face="微軟正黑體"><b></br></br>新竹縣關西鎮東光里十六張49號　Tel:(03)5872224　Fax:(03)5877224
+	<font face="微軟正黑體" size="2"><b></br></br>新竹縣關西鎮東光里十六張49號　Tel:(03)5872224　Fax:(03)5877224
 	</br>清華大學 DreamPocket 團隊製作         Copyright © 2013-2013</font>
     </div>
+    </br>
   </div>
 </body>
 </html>
