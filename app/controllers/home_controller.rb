@@ -9,6 +9,9 @@ class HomeController < ApplicationController
 	def aboutus
 	end
 
+	def error
+	end
+
 	def dreamcoffee
 	end
 
@@ -22,9 +25,11 @@ class HomeController < ApplicationController
 	def create
 		params[:feedback][:context]=params[:feedback][:context].gsub(/\r\n?/, "\n")
 		@feedback = Feedback.new(params[:feedback])
-		@feedback.save
-    		redirect_to new_home_path
-
+		if @feedback.save
+			redirect_to new_home_path
+		else
+    			redirect_to home_error_path
+		end
 	end
 	
 	def show

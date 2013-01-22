@@ -3,6 +3,7 @@ Project1::Application.routes.draw do
   resources :teacher
   devise_for :users
   devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end	
+  match "home/error"=>"home#error"
   match "home/activity"=>"home#activity"
   match "home/dreamcoffee"=>"home#dreamcoffee"
   match "home/aboutus"=>"home#aboutus"
