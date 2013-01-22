@@ -1,0 +1,47 @@
+class HomeController < ApplicationController
+
+	def index
+	end
+
+	def test
+	end
+
+	def aboutus
+	end
+
+	def error
+	end
+
+	def dreamcoffee
+	end
+
+	def activity
+	end
+	
+	def new
+		@showFeedbacks = Feedback.all		
+	end
+
+	def create
+		params[:feedback][:context]=params[:feedback][:context].gsub(/\r\n?/, "\n")
+		@feedback = Feedback.new(params[:feedback])
+		if @feedback.save
+			redirect_to new_home_path
+		else
+    			redirect_to home_error_path
+		end
+	end
+	
+	def show
+		
+		
+	end
+
+	def savediscuss
+		params[:discuss][:context]=params[:discuss][:context].gsub(/\r\n?/, "\n")
+		@discuss = Discuss.new(params[:discuss])
+                @discuss.save
+		redirect_to home_path(params[:discuss][:feedback_id])
+	end
+
+end

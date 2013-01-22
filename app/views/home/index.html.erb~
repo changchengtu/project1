@@ -153,9 +153,6 @@
 		</style>
 	</head>
 	<body>
-        <div style="width:900px; margin: 0 auto;">
-	  <%=image_tag("#{'poster.png'}")%>
-        </div>
 		<div id="wrapper">
 			<div id="carousel">
 				<div>
