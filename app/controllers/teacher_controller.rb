@@ -34,5 +34,10 @@ class TeacherController < ApplicationController
   		redirect_to teacher_path(@answer.feedback_id)
 	end
 
+	def destroy
+  		@deleteFeedback = Feedback.find(params[:id])
+  		@deleteFeedback.destroy
+  		redirect_to new_teacher_path
+	end
 
 end
