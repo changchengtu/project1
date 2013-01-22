@@ -1,9 +1,6 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.ui-jcoverflip {
-  position: relative;
-}
 
 .ui-jcoverflip--item {
   position: absolute;
@@ -44,10 +41,12 @@
   margin-right: 5%;
   float: right;
   background-color: #cff6ff;
+  border-radius: 15px;
 }
 
 #answerContext table td {
   border-bottom: 1px solid #7f7f7f;
+  border-radius: 10px;
 }
 
 #topicList table{
