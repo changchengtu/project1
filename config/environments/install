@@ -3983,4 +3983,161 @@ Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:44:13
 Served asset /jquery.js - 304 Not Modified (1ms)
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2013-01-23 11:05:04] INFO  going to shutdown ...
+[2013-01-23 11:05:04] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ cd ..
+]0;tdog@ctm135042: ~tdog@ctm135042:~$ cd project1/
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git add .
+[sudo] password for tdog: 
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo gti [K[K[Kit commit -m test
+[master 26fd70d] test
+ 1 file changed, 1137 insertions(+), 1 deletion(-)
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo gti [K[K[Kit push heroku master
+Enter passphrase for key '/root/.ssh/id_rsa': 
+Counting objects: 9, done.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 4.84 KiB, done.
+Total 5 (delta 4), reused 0 (delta 0)
+-----> Ruby/Rails app detected
+-----> Installing dependencies using Bundler version 1.3.0.pre.5
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin --deployment
+       Using rake (10.0.3)
+       Using i18n (0.6.1)
+       Using multi_json (1.5.0)
+       Using activesupport (3.2.11)
+       Using builder (3.0.4)
+       Using activemodel (3.2.11)
+       Using erubis (2.7.0)
+       Using journey (1.0.4)
+       Using rack (1.4.4)
+       Using rack-cache (1.2)
+       Using rack-test (0.6.2)
+       Using hike (1.2.1)
+       Using tilt (1.3.3)
+       Using sprockets (2.2.2)
+       Using actionpack (3.2.11)
+       Using mime-types (1.19)
+       Using polyglot (0.3.3)
+       Using treetop (1.4.12)
+       Using mail (2.4.4)
+       Using actionmailer (3.2.11)
+       Using arel (3.0.2)
+       Using tzinfo (0.3.35)
+       Using activerecord (3.2.11)
+       Using activeresource (3.2.11)
+       Using bcrypt-ruby (3.0.1)
+       Using coffee-script-source (1.4.0)
+       Using execjs (1.4.0)
+       Using coffee-script (2.2.0)
+       Using rack-ssl (1.3.2)
+       Using json (1.7.6)
+       Using rdoc (3.12)
+       Using thor (0.16.0)
+       Using railties (3.2.11)
+       Using coffee-rails (3.2.2)
+       Using orm_adapter (0.4.0)
+       Using warden (1.2.1)
+       Using devise (2.2.2)
+       Using jquery-rails (2.1.4)
+       Using pg (0.14.1)
+       Using bundler (1.3.0.pre.5)
+       Using rails (3.2.11)
+       Using sass (3.2.5)
+       Using sass-rails (3.2.6)
+       Using uglifier (1.3.0)
+       Your bundle is complete! It was installed into ./vendor/bundle
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       rake aborted!
+       could not connect to server: Connection refused
+       Is the server running on host "127.0.0.1" and accepting
+       TCP/IP connections on port 5432?
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `initialize'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `new'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `connect'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:326:in `initialize'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/model_schema.rb:308:in `clear_cache!'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/railtie.rb:97:in `block (2 levels) in <class:Railtie>'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:418:in `_run__1166785545320420834__prepare__1423996657539518706__callbacks'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:48:in `prepare!'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application/finisher.rb:47:in `block in <module:Finisher>'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:30:in `instance_exec'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:30:in `run'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:55:in `block in run_initializers'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:54:in `each'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:54:in `run_initializers'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:136:in `initialize!'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/railtie/configurable.rb:30:in `method_missing'
+       /tmp/build_41rwrra1rqpi/config/environment.rb:5:in `<top (required)>'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `require'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `block in require'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:236:in `load_dependency'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `require'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:103:in `require_environment!'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:297:in `block (2 levels) in initialize_tasks'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:93:in `block (2 levels) in <top (required)>'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:60:in `block (3 levels) in <top (required)>'
+       /tmp/build_41rwrra1rqpi/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprocket
