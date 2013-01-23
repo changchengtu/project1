@@ -1310,4 +1310,145 @@ development.rb  install  production.rb  test.rb
     [31m:authentication[m => [31m:login[m,
     [31m:user_name[m => [35m"[m[31mdashanba.test@gmail.com[m[35m"[m,
     [31m:password[m => [35m"[m[31mdashanba[m[35m"[m,
- }[54;176H[K[54;176H76,3[10C95%[47;40H[106m{[
+ }[54;176H[K[54;176H76,3[10C95%[47;40H[106m{[53;2H}[?12l[?25h[m[54;1H[K[53;2H[?25l[54;176H76,2[10C95%[53;2H[?12l[?25h[?25l[54;176H[K[54;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l[54;3H[K[54;3H[?12l[?25h[?25l"production.rb" 77L, 2741C written[141C76,2[10C95%[54;176H[K[54;176H76,2[10C95%[53;2H[?12l[?25h[?25l[47;40H{[53;2H}[54;177H5[52;2H[?12l[?25h[?25l[54;177H4[51;2H[?12l[?25h[?25l[54;177H3[50;2H[?12l[?25h[?25l[54;177H2[49;2H[?12l[?25h[?25l[54;177H1[48;2H[?12l[?25h[?25l[54;177H0[47;2H[?12l[?25h[?25l[54;176H69[46;2H[?12l[?25h[?25l[1;53r[1;1H[10L[1;54r[1;2H [34m# Compress JavaScripts and CSS[m
+  config.assets.compress = [31mtrue[m
+
+  [34m# Don't fallback to assets pipeline if a precompiled asset is missed[m
+  config.assets.compile = [31mfalse[m
+
+  [34m# Generate digests for assets URLs[m
+  config.assets.digest = [31mtrue[m
+
+  [34m# Defaults to nil and saved in location specified by config.assets.prefix[m[54;1H[K[54;176H14,2[10C54%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[54;176H[K[54;176H13,0-1[8C50%[1;1H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H config.serve_static_assets = [31mfalse[m[54;176H[K[54;176H12,2[10C45%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H [34m# Disable Rails's static asset server (Apache or nginx will already do this)[m[54;176H[K[54;176H11,2[10C41%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[54;176H[K[54;176H10,0-1[8C37%[1;1H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H config.action_controller.perform_caching = [31mtrue[m[54;176H[K[54;176H9,2[11C33%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H config.consider_all_requests_local       = [31mfalse[m[54;176H[K[54;176H8,2[11C29%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H [34m# Full error reports are disabled and caching is turned on[m[54;176H[K[54;176H7,2[11C25%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[54;176H[K[54;176H6,0-1[9C20%[1;1H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H config.cache_classes = [31mtrue[m[54;176H[K[54;176H5,2[11C16%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H [34m# Code is not reloaded between requests[m[54;176H[K[54;176H4,2[11C12%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[54;176H[K[54;176H3,0-1[10C8%[1;1H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;2H [34m# Settings specified here will take precedence over those in config/application.rb[m[54;176H[K[54;176H2,2[12C4%[1;2H[?12l[?25h[?25l[1;53r[1;1H[L[1;54r[1;1H[32mProject1[m::[32mApplication[m.configure [38;5;130mdo[m[54;176H[K[54;176H1,2[11CTop[1;2H[?12l[?25h[?25l[54;176H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ cd ..
+]0;tdog@ctm135042: ~/project1/configtdog@ctm135042:~/project1/config$ cd ..
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git a[Kadd .
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git commit -m test
+[master d2b7a5d] test
+ 2 files changed, 258 insertions(+), 1 deletion(-)
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git push heroku master
+Enter passphrase for key '/root/.ssh/id_rsa': 
+Counting objects: 11, done.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 3.45 KiB, done.
+Total 6 (delta 4), reused 0 (delta 0)
+-----> Ruby/Rails app detected
+-----> Installing dependencies using Bundler version 1.3.0.pre.5
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin --deployment
+       Using rake (10.0.3)
+       Using i18n (0.6.1)
+       Using multi_json (1.5.0)
+       Using activesupport (3.2.11)
+       Using builder (3.0.4)
+       Using activemodel (3.2.11)
+       Using erubis (2.7.0)
+       Using journey (1.0.4)
+       Using rack (1.4.4)
+       Using rack-cache (1.2)
+       Using rack-test (0.6.2)
+       Using hike (1.2.1)
+       Using tilt (1.3.3)
+       Using sprockets (2.2.2)
+       Using actionpack (3.2.11)
+       Using mime-types (1.19)
+       Using polyglot (0.3.3)
+       Using treetop (1.4.12)
+       Using mail (2.4.4)
+       Using actionmailer (3.2.11)
+       Using arel (3.0.2)
+       Using tzinfo (0.3.35)
+       Using activerecord (3.2.11)
+       Using activeresource (3.2.11)
+       Using bcrypt-ruby (3.0.1)
+       Using coffee-script-source (1.4.0)
+       Using execjs (1.4.0)
+       Using coffee-script (2.2.0)
+       Using rack-ssl (1.3.2)
+       Using json (1.7.6)
+       Using rdoc (3.12)
+       Using thor (0.16.0)
+       Using railties (3.2.11)
+       Using coffee-rails (3.2.2)
+       Using orm_adapter (0.4.0)
+       Using warden (1.2.1)
+       Using devise (2.2.2)
+       Using jquery-rails (2.1.4)
+       Using pg (0.14.1)
+       Using bundler (1.3.0.pre.5)
+       Using rails (3.2.11)
+       Using sass (3.2.5)
+       Using sass-rails (3.2.6)
+       Using uglifier (1.3.0)
+       Your bundle is complete! It was installed into ./vendor/bundle
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       rake aborted!
+       could not connect to server: Connection refused
+       Is the server running on host "127.0.0.1" and accepting
+       TCP/IP connections on port 5432?
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `initialize'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `new'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `connect'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:326:in `initialize'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/model_schema.rb:308:in `clear_cache!'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/railtie.rb:97:in `block (2 levels) in <class:Railtie>'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:418:in `_run__4410966838684214118__prepare__4390398508957632769__callbacks'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:48:in `prepare!'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application/finisher.rb:47:in `block in <module:Finisher>'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:30:in `instance_exec'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:30:in `run'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:55:in `block in run_initializers'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:54:in `each'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:54:in `run_initializers'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:136:in `initialize!'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/railtie/configurable.rb:30:in `method_missing'
+       /tmp/build_2eq3rqxilw9r7/config/environment.rb:5:in `<top (required)>'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `require'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `block in require'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:236:in `load_dependency'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `require'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:103:in `require_environment!'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:297:in `block (2 levels) in initialize_tasks'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:93:in `block (2 levels) in <top (required)>'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:60:in `block (3 levels) in <top (required)>'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:23:in `invoke_or_reboot_rake_task'
+       /tmp/build_2eq3rqxilw9r7/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:29:in `block (2 levels) in <top (required)>'
+       Tasks: TOP => environment
+       (See full trace by running task with --trace)
+       Precompiling assets failed, enabling runtime asset compilation
+       Injecting rails31_enable_runtime_asset_compilation
+       Please see this article for troubleshooting help:
+       http://devcenter.heroku.com/articles/rails31_heroku_cedar#troubleshooting
+-----> Rails plugin injection
+       Injecting rails_log_stdout
+       Injecting rails3_serve_static_assets
+-----> Discovering process types
+       Procfile declares types      -> (none)
+       Default types for Ruby/Rails -> console, rake, web, worker
+-----> Compiled slug size: 19.2MB
+-----> Launching... done, v27
+       http://hakkaspots.herokuapp.com deployed to Heroku
+
+To git@heroku.com:hakkaspots.git
+   8c965f6..d2b7a5d  master -> master
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git push heroku master[Kcd app/controllers/
+]0;tdog@ctm135042: ~/project1/app/controllerstdog@ctm135042:~/project1/app/controllers$ sudo i[Kvi home_controller.rb
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"home_controller.rb" 54L, 974C[>c[1;1H[35mclass[m [32mHomeController[m < [32mApplicationController[m[3;8H [35mdef[m [36mindex[m[4;8H [35mend[m[6;8H [35mdef[m [36mtest[m[7;8H [35mend[m[9;8H [35mdef[m [36mgoal[m[10;8H [35mend[m[12;8H [35mdef[m [36maboutus[m[13;8H [35mend[m[15;8H [35mdef[m [36merror[m[16;8H [35mend[m[18;8H [35mdef[m [36mdreamcoffee[m[19;8H [35mend[m[21;8H [35mdef[m [36mactivity[m[22;8H [35mend[m[24;8H [35mdef[m [36mnew[m[25;16H [36m@showFeedbacks[m = [32mFeedback[m.all[26;8H [35mend[m[28;8H [35mdef[m [36mcreate[m[29;16H params[[31m:feedback[m][[31m:context[m]=params[[31m:feedback[m][[31m:context[m].gsub([35m/\r\n?/[m, [35m"\n"[m)[30;16H [36m@feedback[m = [32mFeedback[m.new(params[[31m:feedback[m])[31;16H [38;5;130mif[m [36m@feedback[m.save[32;24H [32mSendmail[m.confirm([35m"[m[31mchangcheng.tu@gmail.com[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[33;24H redirect_to new_home_path[34;16H [38;5;130melse[m[35;24H redirect_to home_error_path[36;16H [38;5;130mend[m[37;8H [35mend[m[39;8H [35mdef[m [36mshow[m[41;16H [36m@id[m = params[[31m:id[m][42;16H [36m@showFeedbackContext[m = [32mFeedback[m.find([36m@id[m)[43;16H [36m@showAnswerContext[m = [32mFeedback[m.find([36m@id[m).answers.all[44;16H [36m@showDiscussContext[m = [32mFeedback[m.find([36m@id[m).discusses.all[45;8H [35mend[m[47;8H [35mdef[m [36msavediscuss[m[48;16H params[[31m:discuss[m][[31m:context[m]=params[[31m:discuss[m][[31m:context[m].gsub([35m/\r\n?/[m, [35m"\n"[m)[49;16H [36m@discuss[m = [32mDiscuss[m.new(params[[31m:discuss[m])[50;16H [36m@discuss[m.save[51;16H redirect_to home_path(params[[31m:discuss[m][[31m:feedback_id[m])[52;8H [35mend[m[54;176H1,1[11CTop[1;1H[?12l[?25h[?25l[54;176H2,0-1[2;1H[?12l[?25h[?25l[54;176H3,1-8[3;8H[?12l[?25h[?25l[54;176H4[4;8H[?12l[?25h[?25l[54;176H5,0-1[5;1H[?12l[?25h[?25l[54;176H6,1-8[6;8H[?12l[?25h[?25l[54;176H7[7;8H[?12l[?25h[?25l[54;176H8,0-1[8;1H[?12l[?25h[?25l[54;176H9,1-8[9;8H[?12l[?25h[?25l[54;176H10,1-8[10;8H[?12l[?25h[?25l[54;177H1,0-1[11;1H[?12l[?25h[?25l[54;177H2,1-8[12;8H[?12l[?25h[?25l[54;177H3[13;8H[?12l[?25h[?25l[54;177H4,0-1[14;1H[?12l[?25h[?25l[54;177H5,1-8[15;8H[?12l[?25h[?25l[54;177H6[16;8H[?12l[?25h[?25l[54;177H7,0-1[17;1H[?12l[?25h[?25l[54;177H8,1-8[18;8H[?12l[?25h[?25l[54;177H9[19;8H[?12l[?25h[?25l[54;176H20,0-1[20;1H[?12l[?25h[?25l[54;177H1,1-8[21;8H[?12l[?25h[?25l[54;177H2[22;8H[?12l[?25h[?25l[54;177H3[23;8H[?12l[?25h[?25l[54;177H4[24;8H[?12l[?25h[?25l[54;177H5[25;8H[?12l[?25h[?25l[54;177H6[26;8H[?12l[?25h[?25l[54;177H7,0-1[27;1H[?12l[?25h[?25l[54;177H8,1-8[28;8H[?12l[?25h[?25l[54;177H9[29;8H[?12l[?25h[?25l[54;176H30[30;8H[?12l[?25h[?25l[54;177H1[31;8H[?12l[?25h[?25l[54;177H2[32;8H[?12l[?25h[?25l[54;179H2-16[32;16H[?12l[?25h[?25l[54;179H3-24[32;24H[?12l[?25h[?25l[54;179H4-25[32;25H[?12l[?25h[?25l[54;179H5-26[32;26H[?12l[?25h[?25l[54;179H6-27[32;27H[?12l[?25h[?25l[54;179H7-28[32;28H[?12l[?25h[?25l[54;179H8-29[32;29H[?12l[?25h[?25l[54;179H9-30[32;30H[?12l[?25h[?25l[54;179H10-31[32;31H[?12l[?25h[?25l[54;180H1-32[32;32H[?12l[?25h[?25l[54;180H2-33[32;33H[?12l[?25h[?25l[54;180H3-34[32;34H[?12l[?25h[?25l[54;180H4-35[32;35H[?12l[?25h[?25l[54;180H5-36[32;36H[?12l[?25h[?25l[54;180H6-37[32;37H[?12l[?25h[?25l[54;180H7-38[32;38H[?12l[?25h[?25l[54;180H8-39[32;39H[?12l[?25h[?25l[54;180H9-40[32;40H[?12l[?25h[?25lm[106m([53C)[m[54;179H20-41[32;41H[?12l[?25h[?25l([53C)[54;180H1-42[32;42H[?12l[?25h[?25l[54;180H2-43[32;43H[?12l[?25h[?25l[54;180H3-44[32;44H[?12l[?25h[?25l[54;180H4-45[32;45H[?12l[?25h[?25l[54;180H5-46[32;46H[?12l[?25h[?25l[54;180H6-47[32;47H[?12l[?25h[?25l[54;180H7-48[32;48H[?12l[?25h[?25l[54;180H8-49[32;49H[?12l[?25h[?25l[54;180H9-50[32;50H[?12l[?25h[?25l[54;179H30-51[32;51H[?12l[?25h[?25l[54;180H1-52[32;52H[?12l[?25h[?25l[54;180H2-53[32;53H[?12l[?25h[?25l[54;180H3-54[32;54H[?12l[?25h[?25l[54;180H4-55[32;55H[?12l[?25h[?25l[54;180H5-56[32;56H[?12l[?25h[?25l[54;180H6-57[32;57H[?12l[?25h[?25l[54;180H7-58[32;58H[?12l[?25h[?25l[54;180H8-59[32;59H[?12l[?25h[?25l[54;180H9-60[32;60H[?12l[?25h[?25l[54;179H40-61[32;61H[?12l[?25h[?25l[54;180H1-62[32;62H[?12l[?25h[?25l[54;180H2-63[32;63H[?12l[?25h[?25l[54;180H3-64[32;64H[?12l[?25h[?25l[54;180H4-65[32;65H[?12l[?25h[?25l[54;180H5-66[32;66H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;13H[K[54;176H32,45-66      Top[32;66H[?12l[?25h[?25l[31mo[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;103H[K[54;180H4-65[32;65H[?12l[?25h[?25l[31mc[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;102H[K[54;180H3-64[32;64H[?12l[?25h[?25l[31m.[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;101H[K[54;180H2-63[32;63H[?12l[?25h[?25l[31ml[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;100H[K[54;180H1-62[32;62H[?12l[?25h[?25l[31mi[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;99H[K[54;180H0-61[32;61H[?12l[?25h[?25l[31ma[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;98H[K[54;179H39-60[32;60H[?12l[?25h[?25l[31mm[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;97H[K[54;180H8-59[32;59H[?12l[?25h[?25l[31mg[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;96H[K[54;180H7-58[32;58H[?12l[?25h[?25l[31m@[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;95H[K[54;180H6-57[32;57H[?12l[?25h[?25l[31mu[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;94H[K[54;180H5-56[32;56H[?12l[?25h[?25l[31mt[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;93H[K[54;180H4-55[32;55H[?12l[?25h[?25l[31m.[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;92H[K[54;180H3-54[32;54H[?12l[?25h[?25l[31mg[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;91H[K[54;180H2-53[32;53H[?12l[?25h[?25l[31mn[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;90H[K[54;180H1-52[32;52H[?12l[?25h[?25l[31me[m[35m"[m,params[[31m:feedback[m][[31m:context[m]).deliver[32;89H[K[54;180H0-51[32;51H[?12l[?25h[?25l
