@@ -1,0 +1,1066 @@
+Script started on Wednesday, January 23, 2013 AM09:57:45 CST
+]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ export GMAIL_SMTP_USER=username@gmail.com[C[C[C[C[1P@gmail.com[1P@gmail.com[1P@gmail.com[1P@gmail.com[1P@gmail.com[1P@gmail.com[1P@gmail.com[1P@gmail.comd@gmail.coma@gmail.coms@gmail.comh@gmail.coma@gmail.comn@gmail.comb@gmail.coma@gmail.com.@gmail.comt@gmail.come@gmail.coms@gmail.comt@gmail.com[C[C[C[C[C[C[C[C[C[C
+]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ export GMAIL_SMTP_PASSWORD=yourpassword[C[K[K[K[K[K[K[K[K[K[K[K[Kdashanba
+]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ rails generate mailer UserMailer confirm[1P confirm[1P confirm[1P confirm[1P confirm[1P confirm[1P confirm[1P confirm[1P confirm[1P confirm[1P confirmF confirme confirme confirmd confirmb confirma confirmc confirmk confirm[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K
+[1m[32m      create[0m  app/mailers/feedback.rb
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/feedback
+[1m[37m      invoke[0m  test_unit
+[1m[32m      create[0m    test/functional/feedback_test.rb
+]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ cd ..
+]0;tdog@ctm135042: ~/project1/configtdog@ctm135042:~/project1/config$ cd ..
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ cd app/mailers/
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ ls
+feedback.rb
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ sudo vi feedback.rb 
+[sudo] password for tdog: 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"feedback.rb" 3L, 75C[>c[1;1H[35mclass[m [32mFeedback[m < [32mActionMailer[m::[32mBase[m
+  default [31mfrom[m: [35m"[m[31mfrom@example.com[m[35m"
+end[m
+[94m~                                                                                                                                                                                                [5;1H~                                                                                                                                                                                                [6;1H~                                                                                                                                                                                                [7;1H~                                                                                                                                                                                                [8;1H~                                                                                                                                                                                                [9;1H~                                                                                                                                                                                                [10;1H~                                                                                                                                                                                                [11;1H~                                                                                                                                                                                                [12;1H~                                                                                                                                                                                                [13;1H~                                                                                                                                                                                                [14;1H~                                                                                                                                                                                                [15;1H~                                                                                                                                                                                                [16;1H~                                                                                                                                                                                                [17;1H~                                                                                                                                                                                                [18;1H~                                                                                                                                                                                                [19;1H~                                                                                                                                                                                                [20;1H~                                                                                                                                                                                                [21;1H~                                                                                                                                                                                                [22;1H~                                                                                                                                                                                                [23;1H~                                                                                                                                                                                                [24;1H~                                                                                                                                                                                                [25;1H~                                                                                                                                                                                                [26;1H~                                                                                                                                                                                                [27;1H~                                                                                                                                                                                                [28;1H~                                                                                                                                                                                                [29;1H~                                                                                                                                                                                                [30;1H~                                                                                                                                                                                                [31;1H~                                                                                                                                                                                                [32;1H~                                                                                                                                                                                                [33;1H~                                                                                                                                                                                                [34;1H~                                                                                                                                                                                                [35;1H~                                                                                                                                                                                                [36;1H~                                                                                                                                                                                                [37;1H~                                                                                                                                                                                                [38;1H~                                                                                                                                                                                                [39;1H~                                                                                                                                                                                                [40;1H~                                                                                                                                                                                                [41;1H~                                                                                                                                                                                                [42;1H~                                                                                                                                                                                                [43;1H~                                                                                                                                                                                                [44;1H~                                                                                                                                                                                                [45;1H~                                                                                                                                                                                                [46;1H~                                                                                                                                                                                                [47;1H~                                                                                                                                                                                                [48;1H~                                                                                                                                                                                                [49;1H~                                                                                                                                                                                                [50;1H~                                                                                                                                                                                                [51;1H~                                                                                                                                                                                                [52;1H~                                                                                                                                                                                                [53;1H~                                                                                                                                                                                                [m[54;176H1,1[11CAll[1;1H[?12l[?25h[?25l[54;176H2[2;1H[?12l[?25h[?25l[54;178H2[2;2H[?12l[?25h[?25l[54;178H3[2;3H[?12l[?25h[?25l[54;178H4[2;4H[?12l[?25h[?25l[54;178H5[2;5H[?12l[?25h[?25l[54;178H6[2;6H[?12l[?25h[?25l[54;178H7[2;7H[?12l[?25h[?25l[54;178H8[2;8H[?12l[?25h[?25l[54;178H9[2;9H[?12l[?25h[?25l[54;178H10[2;10H[?12l[?25h[?25l[54;179H1[2;11H[?12l[?25h[?25l[54;179H2[2;12H[?12l[?25h[?25l[54;179H3[2;13H[?12l[?25h[?25l[54;179H4[2;14H[?12l[?25h[?25l[54;179H5[2;15H[?12l[?25h[?25l[54;179H6[2;16H[?12l[?25h[?25l[54;179H7[2;17H[?12l[?25h[?25l[54;179H8[2;18H[?12l[?25h[?25l[54;179H9[2;19H[?12l[?25h[?25l[54;178H20[2;20H[?12l[?25h[?25l[54;179H1[2;21H[?12l[?25h[?25l[54;179H2[2;22H[?12l[?25h[?25l[54;179H3[2;23H[?12l[?25h[?25l[54;179H4[2;24H[?12l[?25h[?25l[54;179H5[2;25H[?12l[?25h[?25l[54;179H6[2;26H[?12l[?25h[?25l[54;179H7[2;27H[?12l[?25h[?25l[54;179H8[2;28H[?12l[?25h[?25l[54;179H9[2;29H[?12l[?25h[?25l[54;178H30[2;30H[?12l[?25h[?25l[54;179H1[2;31H[?12l[?25h[?25l[54;179H2[2;32H[?12l[?25h[?25l[54;179H3[2;33H[?12l[?25h[?25l[54;179H4[2;34H[?12l[?25h[?25l[54;179H3[2;33H[?12l[?25h[?25l[54;179H2[2;32H[?12l[?25h[?25l[54;179H1[2;31H[?12l[?25h[?25l[54;179H0[2;30H[?12l[?25h[?25l[54;178H29[2;29H[?12l[?25h[?25l[54;179H8[2;28H[?12l[?25h[?25l[54;179H7[2;27H[?12l[?25h[?25l[54;179H6[2;26H[?12l[?25h[?25l[54;179H5[2;25H[?12l[?25h[?25l[54;179H6[2;26H[?12l[?25h[?25l[54;179H7[2;27H[?12l[?25h[?25l[54;179H8[2;28H[?12l[?25h[?25l[54;179H9[2;29H[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;2H[K[54;2H[?12l[?25h [?25l[174C2,29[10CAll[2;29H[?12l[?25h[?25l[54;178H30[2;30H[?12l[?25h[?25l[54;179H1[2;31H[?12l[?25h[?25l[54;179H2[2;32H[?12l[?25h[?25l[54;179H3[2;33H[?12l[?25h[?25l[54;179H4[2;34H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;176H[K[54;176H2,34[10CAll[2;34H[?12l[?25h[?25l[54;179H5[2;35H[?12l[?25h[?25l[3;53r[3;1H[L[1;54r[54;176H[K[54;176H3,1[11CAll[3;1H[?12l[?25h[?25l[4;53r[4;1H[L[1;54r[54;176H[K[54;176H4,1[11CAll[4;1H[?12l[?25h[?25l[54;178H2[4;2H[?12l[?25h[?25l[54;178H3[4;3H[?12l[?25h[?25l[5;53r[5;1H[3L[1;54r[4;4H [35mdef[m [36mconfirm[m(customeremail,customer,time,people,gift,phone)[5;8H mail([31m:to[m => customeremail, [31m:subject[m => [35m"[m[31myou have reserved a dashanba travel[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgiff[6;1Ht:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)
+  [35mend[m[54;176H[K[54;176H6,6[11CAll[7;6H[?12l[?25h[?25l[54;176H5[5;6H[?12l[?25h[?25l[54;176H4[4;6H[?12l[?25h[?25l[54;176H5[5;6H[?12l[?25h[?25l[54;178H7[5;7H[?12l[?25h[?25l[54;178H8[5;8H[?12l[?25h[?25l[54;178H9[5;9H[?12l[?25h[?25l[54;178H10[5;10H[?12l[?25h[?25l[54;179H1[5;11H[?12l[?25h[?25l[54;179H2[5;12H[?12l[?25h[?25ll[106m([m[179C[31mff[6;1Ht[m[33C[106m)[m[54;179H3[5;13H[?12l[?25h[?25l[180C[31mff[6;1Ht[m[54;179H4[5;14H[?12l[?25h[?25l([179C[31mff[6;1Ht[m[33C)[54;179H5[5;15H[?12l[?25h[?25l[54;179H6[5;16H[?12l[?25h[?25l[54;179H7[5;17H[?12l[?25h[?25l[54;179H8[5;18H[?12l[?25h[?25l[54;179H9[5;19H[?12l[?25h[?25l[54;178H20[5;20H[?12l[?25h[?25l[54;179H1[5;21H[?12l[?25h[?25l[54;179H2[5;22H[?12l[?25h[?25l[54;179H3[5;23H[?12l[?25h[?25l[54;179H4[5;24H[?12l[?25h[?25l[54;179H5[5;25H[?12l[?25h[?25l[54;179H6[5;26H[?12l[?25h[?25l[54;179H7[5;27H[?12l[?25h[?25l[54;179H8[5;28H[?12l[?25h[?25l[54;179H9[5;29H[?12l[?25h[?25l[54;178H30[5;30H[?12l[?25h[?25l[54;179H1[5;31H[?12l[?25h[?25l[54;179H2[5;32H[?12l[?25h[?25l[54;179H3[5;33H[?12l[?25h[?25l[54;179H4[5;34H[?12l[?25h[?25l[54;179H5[5;35H[?12l[?25h[?25l[54;179H6[5;36H[?12l[?25h[?25l[54;179H7[5;37H[?12l[?25h[?25l[54;179H8[5;38H[?12l[?25h[?25l[54;179H9[5;39H[?12l[?25h[?25l[54;178H40[5;40H[?12l[?25h[?25l[54;179H1[5;41H[?12l[?25h[?25l[54;179H2[5;42H[?12l[?25h[?25l[54;179H3[5;43H[?12l[?25h[?25l[54;179H4[5;44H[?12l[?25h[?25l[54;179H5[5;45H[?12l[?25h[?25l[54;179H6[5;46H[?12l[?25h[?25l[54;179H7[5;47H[?12l[?25h[?25l[54;179H8[5;48H[?12l[?25h[?25l[54;179H9[5;49H[?12l[?25h[?25l[54;178H50[5;50H[?12l[?25h[?25l[54;179H1[5;51H[?12l[?25h[?25l[54;179H2[5;52H[?12l[?25h[?25l[54;179H3[5;53H[?12l[?25h[?25l[54;179H4[5;54H[?12l[?25h[?25l[54;179H5[5;55H[?12l[?25h[?25l[54;179H6[5;56H[?12l[?25h[?25l[54;179H7[5;57H[?12l[?25h[?25l[54;179H8[5;58H[?12l[?25h[?25l[54;179H9[5;59H[?12l[?25h[?25l[54;178H60[5;60H[?12l[?25h[?25l[54;179H1[5;61H[?12l[?25h[?25l[54;179H2[5;62H[?12l[?25h[?25l[54;179H3[5;63H[?12l[?25h[?25l[54;179H4[5;64H[?12l[?25h[?25l[54;179H5[5;65H[?12l[?25h[?25l[54;179H6[5;66H[?12l[?25h[?25l[54;179H7[5;67H[?12l[?25h[?25l[54;179H8[5;68H[?12l[?25h[?25l[54;179H9[5;69H[?12l[?25h[?25l[54;178H70[5;70H[?12l[?25h[?25l[54;179H1[5;71H[?12l[?25h[?25l[54;179H2[5;72H[?12l[?25h[?25l[54;179H3[5;73H[?12l[?25h[?25l[54;179H4[5;74H[?12l[?25h[?25l[54;179H5[5;75H[?12l[?25h[?25l[54;179H6[5;76H[?12l[?25h[?25l[54;179H7[5;77H[?12l[?25h[?25l[54;179H8[5;78H[?12l[?25h[?25l[54;179H9[5;79H[?12l[?25h[?25l[54;178H80[5;80H[?12l[?25h[?25l[54;179H1[5;81H[?12l[?25h[?25l[54;179H2[5;82H[?12l[?25h[?25l[54;179H3[5;83H[?12l[?25h[?25l[54;179H4[5;84H[?12l[?25h[?25l[31me[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgiftt[6;1H:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;35H[K[54;179H3[5;83H[?12l[?25h[?25l[31mv[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift::[m[6;1H[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;34H[K[54;179H2[5;82H[?12l[?25h[?25l[31ma[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m""[m[6;1H+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;33H[K[54;179H1[5;81H[?12l[?25h[?25l[31mr[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m++[6;1Hgift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;32H[K[54;179H0[5;80H[?12l[?25h[?25l[31mt[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gg[6;1Hift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;31H[K[54;178H79[5;79H[?12l[?25h[?25l[31m [m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gii[6;1Hft+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;30H[K[54;179H8[5;78H[?12l[?25h[?25l[31ma[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+giff[6;1Ht+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;29H[K[54;179H7[5;77H[?12l[?25h[?25l[31mb[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+giftt[6;1H+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;28H[K[54;179H6[5;76H[?12l[?25h[?25l[31mn[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift++[6;1H[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[6;27H[K[54;179H5[5;75H[?12l[?25h[?25l[31ma[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m""[6;1H\n[m[31mcustomer phone:[m[35m"[m+phone)[6;26H[K[54;179H4[5;74H[?12l[?25h[?25l[31mh[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\\[6;1Hn[m[31mcustomer phone:[m[35m"[m+phone)[6;25H[K[54;179H3[5;73H[?12l[?25h[?25l[31ms[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\nn[m[6;1H[31mcustomer phone:[m[35m"[m+phone)[6;24H[K[54;179H2[5;72H[?12l[?25h[?25l[31ma[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcc[6;1Hustomer phone:[m[35m"[m+phone)[6;23H[K[54;179H1[5;71H[?12l[?25h[?25l[31md[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcuu[6;1Hstomer phone:[m[35m"[m+phone)[6;22H[K[54;179H0[5;70H[?12l[?25h[?25l[31m [m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcuss[6;1Htomer phone:[m[35m"[m+phone)[6;21H[K[54;178H69[5;69H[?12l[?25h[?25l[31ma[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustt[6;1Homer phone:[m[35m"[m+phone)[6;20H[K[54;179H8[5;68H[?12l[?25h[?25l[31m [m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustoo[6;1Hmer phone:[m[35m"[m+phone)[6;19H[K[54;179H7[5;67H[?12l[?25h[?25l[31md[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomm[6;1Her phone:[m[35m"[m+phone)[6;18H[K[54;179H6[5;66H[?12l[?25h[?25l[31me[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomee[6;1Hr phone:[m[35m"[m+phone)[6;17H[K[54;179H5[5;65H[?12l[?25h[?25l[31mv[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomerr[6;1H phone:[m[35m"[m+phone)[6;16H[K[54;179H4[5;64H[?12l[?25h[?25l[31mr[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer  [6;1Hphone:[m[35m"[m+phone)[6;15H[K[54;179H3[5;63H[?12l[?25h[?25l[31me[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer pp[6;1Hhone:[m[35m"[m+phone)[6;14H[K[54;179H2[5;62H[?12l[?25h[?25l[31ms[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phh[6;1Hone:[m[35m"[m+phone)[6;13H[K[54;179H1[5;61H[?12l[?25h[?25l[31me[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phoo[6;1Hne:[m[35m"[m+phone)[6;12H[K[54;179H0[5;60H[?12l[?25h[?25l[31mr[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phonn[6;1He:[m[35m"[m+phone)[6;11H[K[54;178H59[5;59H[?12l[?25h[?25l[31m [m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phonee[6;1H:[m[35m"[m+phone)[6;10H[K[54;179H8[5;58H[?12l[?25h[?25l[31me[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone::[m[6;1H[35m"[m+phone)[6;9H[K[54;179H7[5;57H[?12l[?25h[?25l[31mv[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m""[m[6;1H+phone)[6;8H[K[54;179H6[5;56H[?12l[?25h[?25l[31ma[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m++[6;1Hphone)[6;7H[K[54;179H5[5;55H[?12l[?25h[?25l[31mh[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+pp[6;1Hhone)[6;6H[K[54;179H4[5;54H[?12l[?25h[?25l[31m [m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phh[6;1Hone)[6;5H[K[54;179H3[5;53H[?12l[?25h[?25l[31mu[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phoo[6;1Hne)[6;4H[K[54;179H2[5;52H[?12l[?25h[?25l[31mo[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phonn[6;1He)[6;3H[K[54;179H1[5;51H[?12l[?25h[?25l[31my[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phonee[6;1H)[6;2H[K[54;179H0[5;50H[?12l[?25h[?25l[5;53r[53;1H
+[1;54r[5;1H        mail([31m:to[m => customeremail, [31m:subject[m => [35m""[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[53;1H[94m~                                                                                                                                                                                                [m[54;176H[K[54;176H5,49[10CAll[5;49H[?12l[?25h[?25l[6;53r[6;1H[L[1;54r[5;48H[35m"[m[31mu[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phonee[6;1H)[54;176H[K[54;176H5,50[10CAll[5;50H[?12l[?25h[?25l[5;53r[53;1H
+[1;54r[5;1H        mail([31m:to[m => customeremail, [31m:subject[m => [35m""[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[53;1H[94m~                                                                                                                                                                                                [m[54;176H[K[54;176H5,49[10CAll[5;49H[?12l[?25h[?25l[6;53r[6;1H[L[1;54r[5;48H[35m"[m[31m有人留言[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone::[m[6;1H[35m"[m+phone)[54;176H[K[54;176H5,61-57[7CAll[5;57H[?12l[?25h[?25l[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m++[6;1Hphone)[6;7H[K[54;178H58-55[5;55H[?12l[?25h[?25l[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phh[6;1Hone)[6;5H[K[54;179H5-53[5;53H[?12l[?25h[?25l[31m回餽了[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phonn[6;1He:[m[35m"[m+phone)[54;178H64-59[5;59H[?12l[?25h[?25l[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone::[m[6;1H[35m"[m+phone)[6;9H[K[54;179H1-57[5;57H[?12l[?25h[?25l[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m++[6;1Hphone)[6;7H[K[54;178H58-55[5;55H[?12l[?25h[?25l[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[35m\n\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phh[6;1Hone)[6;5H[K[54;179H5-53[5;53H[?12l[?25h[?25l[31m提問[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[1C[35mn\n\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone::[m[6;1H[35m"[m+phone)[54;178H61-57[5;57H[?12l[?25h[?25l[54;178H58-55[5;55H[?12l[?25h[?25l[54;179H5-53[5;53H[?12l[?25h[?25l[54;179H8-55[5;55H[?12l[?25h[?25l[54;178H61-57[5;57H[?12l[?25h[?25l[31m了[m[35m"[m, [31m:body[m=>[35m"[m[31mthe site is still in beta form[m[3C[35mn\n"[m+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phonn[6;1He:[m[35m"[m+phone)[54;179H4-59[5;59H[?12l[?25h[?25l[54;179H5-60[5;60H[?12l[?25h[?25l[54;179H6-61[5;61H[?12l[?25h[?25l[54;179H7-62[5;62H[?12l[?25h[?25l[54;179H8-63[5;63H[?12l[?25h[?25l[54;179H9-64[5;64H[?12l[?25h[?25l[54;178H70-65[5;65H[?12l[?25h[?25l[54;179H1-66[5;66H[?12l[?25h[?25l[54;179H2-67[5;67H[?12l[?25h[?25l[54;179H3-68[5;68H[?12l[?25h[?25l[4;16H[106m([45C)[m[54;176H4,63   [4;63H[?12l[?25h[?25l[4;16H([45C)[54;176H3,1 [3;1H[?12l[?25h[?25l[4;16H[106m([45C)[m[54;176H4,63[4;63H[?12l[?25h[?25l[4;16H([45C)[54;176H5,73-68[5;68H[?12l[?25h[?25l[4;16H[106m([45C)[m[54;176H4,63   [4;63H[?12l[?25h[?25l[4;16H([45C)[54;176H3,1 [3;1H[?12l[?25h[?25l[4;16H[106m([45C)[m[54;176H4,63[4;63H[?12l[?25h[?25l[54;179H2[4;62H[?12l[?25h[?25l[4;16H([45C)[54;179H1[4;61H[?12l[?25h[?25l[54;179H0[4;60H[?12l[?25h[?25l[54;178H59[4;59H[?12l[?25h[?25l[54;179H8[4;58H[?12l[?25h[?25l[54;179H7[4;57H[?12l[?25h[?25l[54;179H6[4;56H[?12l[?25h[?25l[54;179H5[4;55H[?12l[?25h[?25l[54;179H4[4;54H[?12l[?25h[?25l[54;179H3[4;53H[?12l[?25h[?25l[54;179H2[4;52H[?12l[?25h[?25l[54;179H1[4;51H[?12l[?25h[?25l[54;179H0[4;50H[?12l[?25h[?25l[54;178H49[4;49H[?12l[?25h[?25l[54;179H8[4;48H[?12l[?25h[?25l[54;179H7[4;47H[?12l[?25h[?25l[54;179H6[4;46H[?12l[?25h[?25l[54;179H5[4;45H[?12l[?25h[?25l[54;179H4[4;44H[?12l[?25h[?25l[54;179H3[4;43H[?12l[?25h[?25l[54;179H2[4;42H[?12l[?25h[?25l[54;179H1[4;41H[?12l[?25h[?25l[54;179H0[4;40H[?12l[?25h[?25l[54;178H39[4;39H[?12l[?25h[?25l[54;179H8[4;38H[?12l[?25h[?25l[54;179H7[4;37H[?12l[?25h[?25l[54;179H6[4;36H[?12l[?25h[?25l[54;179H5[4;35H[?12l[?25h[?25l[54;179H4[4;34H[?12l[?25h[?25l[54;179H3[4;33H[?12l[?25h[?25l[54;179H2[4;32H[?12l[?25h[?25l[54;179H1[4;31H[?12l[?25h[?25l[54;179H0[4;30H[?12l[?25h[?25l[54;178H29[4;29H[?12l[?25h[?25l[54;179H8[4;28H[?12l[?25h[?25l[54;179H7[4;27H[?12l[?25h[?25l[54;179H6[4;26H[?12l[?25h[?25l[54;179H5[4;25H[?12l[?25h[?25leemail,customer,time,people,gift,phone)[4;62H[K[54;179H4[4;24H[?12l[?25h[?25lemail,customer,time,people,gift,phone)[4;61H[K[54;179H3[4;23H[?12l[?25h[?25loemail,customer,time,people,gift,phone)[4;60H[K[54;179H2[4;22H[?12l[?25h[?25ltemail,customer,time,people,gift,phone)[4;59H[K[54;179H1[4;21H[?12l[?25h[?25lsemail,customer,time,people,gift,phone)[4;58H[K[54;179H0[4;20H[?12l[?25h[?25luemail,customer,time,people,gift,phone)[4;57H[K[54;178H19[4;19H[?12l[?25h[?25lcemail,customer,time,people,gift,phone)[4;56H[K[54;179H8[4;18H[?12l[?25h[?25l(email,customer,time,people,gift,phone)[4;55H[K[4;16H[106m([37C)[m[54;179H7[4;17H[?12l[?25h[?25l([37C)[54;179H8[4;18H[?12l[?25h[?25l[54;179H9[4;19H[?12l[?25h[?25l[54;178H20[4;20H[?12l[?25h[?25l[54;179H1[4;21H[?12l[?25h[?25l[54;179H2[4;22H[?12l[?25h[?25llㄎ,customer,time,people,gift,phone)[54;179H5-24[4;24H[?12l[?25h[?25la,customer,time,people,gift,phone)[54;179H6-25[4;25H[?12l[?25h[?25lad,customer,time,people,gift,phone)[54;179H7-26[4;26H[?12l[?25h[?25ldd,customer,time,people,gift,phone)[54;179H8-27[4;27H[?12l[?25h[?25l[54;179H9-28[4;28H[?12l[?25h[?25l[54;178H30-29[4;29H[?12l[?25h[?25l[54;178H29-28[4;28H[?12l[?25h[?25l[54;179H8-27[4;27H[?12l[?25h[?25l[54;179H7-26[4;26H[?12l[?25h[?25l[54;179H6-25[4;25H[?12l[?25h[?25l[54;179H5-24[4;24H[?12l[?25h[?25lladd,customer,time,people,gift,phone)[4;58H[K[54;179H2   [4;22H[?12l[?25h[?25l[54;179H3[4;23H[?12l[?25h[?25l[54;179H4[4;24H[?12l[?25h[?25l[54;179H5[4;25H[?12l[?25h[?25l[54;179H6[4;26H[?12l[?25h[?25l[54;179H7[4;27H[?12l[?25h[?25l[54;179H8[4;28H[?12l[?25h[?25l[54;179H9[4;29H[?12l[?25h[?25l[54;178H30[4;30H[?12l[?25h[?25l[54;179H1[4;31H[?12l[?25h[?25l[54;179H2[4;32H[?12l[?25h[?25l[54;179H3[4;33H[?12l[?25h[?25l[54;179H4[4;34H[?12l[?25h[?25l[54;179H5[4;35H[?12l[?25h[?25lrtime,people,gift,phone)[4;57H[K[54;179H4[4;34H[?12l[?25h[?25letime,people,gift,phone)[4;56H[K[54;179H3[4;33H[?12l[?25h[?25lmtime,people,gift,phone)[4;55H[K[54;179H2[4;32H[?12l[?25h[?25lotime,people,gift,phone)[4;54H[K[54;179H1[4;31H[?12l[?25h[?25lttime,people,gift,phone)[4;53H[K[54;179H0[4;30H[?12l[?25h[?25ltime,people,gift,phone)[4;52H[K[54;178H29[4;29H[?12l[?25h[?25lutime,people,gift,phone)[4;51H[K[54;179H8[4;28H[?12l[?25h[?25lctime,people,gift,phone)[4;50H[K[54;179H7[4;27H[?12l[?25h[?25l,time,people,gift,phone)[4;49H[K[54;179H6[4;26H[?12l[?25h[?25l[54;179H7[4;27H[?12l[?25h[?25l[54;179H8[4;28H[?12l[?25h[?25l[54;179H9[4;29H[?12l[?25h[?25l[54;178H30[4;30H[?12l[?25h[?25l[54;179H1[4;31H[?12l[?25h[?25l[54;179H2[4;32H[?12l[?25h[?25l[54;179H3[4;33H[?12l[?25h[?25l[54;179H4[4;34H[?12l[?25h[?25l[54;179H5[4;35H[?12l[?25h[?25l[54;179H6[4;36H[?12l[?25h[?25l[54;179H7[4;37H[?12l[?25h[?25l[54;179H8[4;38H[?12l[?25h[?25l[54;179H9[4;39H[?12l[?25h[?25l[54;178H40[4;40H[?12l[?25h[?25l[54;179H1[4;41H[?12l[?25h[?25l[54;179H2[4;42H[?12l[?25h[?25l[54;179H3[4;43H[?12l[?25h[?25ltphone)[4;48H[K[54;179H2[4;42H[?12l[?25h[?25lfphone)[4;47H[K[54;179H1[4;41H[?12l[?25h[?25liphone)[4;46H[K[54;179H0[4;40H[?12l[?25h[?25lgphone)[4;45H[K[54;178H39[4;39H[?12l[?25h[?25l,phone)[4;44H[K[54;179H8[4;38H[?12l[?25h[?25lephone)[4;43H[K[54;179H7[4;37H[?12l[?25h[?25llphone)[4;42H[K[54;179H6[4;36H[?12l[?25h[?25lpphone)[4;41H[K[54;179H5[4;35H[?12l[?25h[?25lphone)[4;40H[K[54;179H4[4;34H[?12l[?25h[?25lephone)[4;39H[K[54;179H3[4;33H[?12l[?25h[?25lpphone)[4;38H[K[54;179H2[4;32H[?12l[?25h[?25lphone)[4;37H[K[54;179H1[4;31H[?12l[?25h[?25lephone)[4;36H[K[54;179H0[4;30H[?12l[?25h[?25lmphone)[4;35H[K[54;178H29[4;29H[?12l[?25h[?25liphone)[4;34H[K[54;179H8[4;28H[?12l[?25h[?25ltphone)[4;33H[K[54;179H7[4;27H[?12l[?25h[?25l,phone)[4;32H[K[54;179H6[4;26H[?12l[?25h[?25l[54;179H7[4;27H[?12l[?25h[?25l[54;179H8[4;28H[?12l[?25h[?25l[54;179H9[4;29H[?12l[?25h[?25l[54;178H30[4;30H[?12l[?25h[?25l[4;16H[106m([14C)[m[54;179H1[4;31H[?12l[?25h[?25ln)[106m )[m[4;31H[K[54;179H0[4;30H[?12l[?25h[?25lo)[106m )[m[4;30H[K[54;178H29[4;29H[?12l[?25h[?25lh)[106m )[m[4;29H[K[54;179H8[4;28H[?12l[?25h[?25lp)[106m )[m[4;28H[K[54;179H7[4;27H[?12l[?25h[?25l,)[106m )[m[4;27H[K[54;179H6[4;26H[?12l[?25h[?25l,[106mc[m)c[106m)[m[54;179H7[4;27H[?12l[?25h[?25lc[106mo[m)o[106m)[m[54;179H8[4;28H[?12l[?25h[?25lo[106mn[m)n[106m)[m[54;179H9[4;29H[?12l[?25h[?25ln[106mt[m)t[106m)[m[54;178H30[4;30H[?12l[?25h[?25lt[106me[m)e[106m)[m[54;179H1[4;31H[?12l[?25h[?25le[106mx[m)x[106m)[m[54;179H2[4;32H[?12l[?25h[?25lx[106mt[m)t[106m)[m[54;179H3[4;33H[?12l[?25h[?25l[4;16H([16C)[54;176H5[5;33H[?12l[?25h[?25l[54;179H4[5;34H[?12l[?25h[?25l[54;179H5[5;35H[?12l[?25h[?25l[54;179H6[5;36H[?12l[?25h[?25l[54;179H7[5;37H[?12l[?25h[?25l[54;179H8[5;38H[?12l[?25h[?25l[54;179H9[5;39H[?12l[?25h[?25l[54;178H40[5;40H[?12l[?25h[?25l[54;179H1[5;41H[?12l[?25h[?25l[54;179H2[5;42H[?12l[?25h[?25l[54;179H3[5;43H[?12l[?25h[?25l[54;179H4[5;44H[?12l[?25h[?25l[54;179H5[5;45H[?12l[?25h[?25l[54;179H6[5;46H[?12l[?25h[?25l[54;179H7[5;47H[?12l[?25h[?25l[54;179H8[5;48H[?12l[?25h[?25l[54;179H9[5;49H[?12l[?25h[?25l[54;178H52-51[5;51H[?12l[?25h[?25l[54;179H5-53[5;53H[?12l[?25h[?25l[54;179H8-55[5;55H[?12l[?25h[?25l[54;178H61-57[5;57H[?12l[?25h[?25l[54;179H4-59[5;59H[?12l[?25h[?25l[54;179H5-60[5;60H[?12l[?25h[?25l[54;179H6-61[5;61H[?12l[?25h[?25l[54;179H7-62[5;62H[?12l[?25h[?25l[54;179H8-63[5;63H[?12l[?25h[?25l[54;179H9-64[5;64H[?12l[?25h[?25l[54;178H70-65[5;65H[?12l[?25h[?25l[54;179H1-66[5;66H[?12l[?25h[?25l[54;179H2-67[5;67H[?12l[?25h[?25l[54;179H3-68[5;68H[?12l[?25h[?25l[54;179H4-69[5;69H[?12l[?25h[?25l>the site is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phonee[6;1H[31m:"+phone)[m[6;10H[K[7;1H[31m  end
+end[5;69H[?12l[?25h[?25l[m>he site is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m::[6;1H"+phone)[m[6;9H[K[5;69H[?12l[?25h[?25l>e site is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:""[6;1H+phone)[m[6;8H[K[5;69H[?12l[?25h[?25l> site is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"++[6;1Hphone)[m[6;7H[K[5;69H[?12l[?25h[?25l>site is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+pp[6;1Hhone)[m[6;6H[K[5;69H[?12l[?25h[?25l>ite is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phh[6;1Hone)[m[6;5H[K[5;69H[?12l[?25h[?25l>te is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phoo[6;1Hne)[m[6;4H[K[5;69H[?12l[?25h[?25l>e is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phonn[6;1He)[m[6;3H[K[5;69H[?12l[?25h[?25l> is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phonee[6;1H)[m[6;2H[K[5;69H[?12l[?25h[?25l[5;53r[53;1H
+[1;54r[5;1H        mail([31m:to[m => customeremail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>is still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[53;1H[94m~                                                                                                                                                                                                [m[54;176H[K[54;176H5,74-69[7CAll[5;69H[?12l[?25h[?25l>s still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;193H[K[5;69H[?12l[?25h[?25l> still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;192H[K[5;69H[?12l[?25h[?25l>still [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;191H[K[5;69H[?12l[?25h[?25l>till [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;190H[K[5;69H[?12l[?25h[?25l>ill [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;189H[K[5;69H[?12l[?25h[?25l>ll [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;188H[K[5;69H[?12l[?25h[?25ll [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;187H[K[5;69H[?12l[?25h[?25l> [38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;186H[K[5;69H[?12l[?25h[?25l>[38;5;130min[m beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;185H[K[5;69H[?12l[?25h[?25l>n beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;184H[K[5;69H[?12l[?25h[?25l> beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;183H[K[5;69H[?12l[?25h[?25l>beta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;182H[K[5;69H[?12l[?25h[?25l>eta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;181H[K[5;69H[?12l[?25h[?25l>ta form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;180H[K[5;69H[?12l[?25h[?25l>a form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;179H[K[5;69H[?12l[?25h[?25l> form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;178H[K[5;69H[?12l[?25h[?25l>form\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;177H[K[5;69H[?12l[?25h[?25l>orm\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;176H[K[5;69H[?12l[?25h[?25l>rm\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;175H[K[5;69H[?12l[?25h[?25l>m\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;174H[K[5;69H[?12l[?25h[?25l>\n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;173H[K[5;69H[?12l[?25h[?25l>n\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;172H[K[5;69H[?12l[?25h[?25l>\n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;171H[K[5;69H[?12l[?25h[?25l>n\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;170H[K[5;69H[?12l[?25h[?25l>\n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;169H[K[5;69H[?12l[?25h[?25l>n[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;168H[K[5;69H[?12l[?25h[?25l>[35m"[m[31m+[m[35m"[mcustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;167H[K[5;69H[?12l[?25h[?25l>+[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;166H[K[6;1H  [35mend
+end[5;69H[?12l[?25h[?25l[m>[35m"[m[31mcustomer:[m[35m"[m+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;165H[K[5;69H[?12l[?25h[?25l>customer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;164H[K[6;1H[31m  end
+end[5;69H[?12l[?25h[?25l[m>ustomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;163H[K[5;69H[?12l[?25h[?25l>stomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;162H[K[5;69H[?12l[?25h[?25l>tomer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;161H[K[5;69H[?12l[?25h[?25l>omer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;160H[K[5;69H[?12l[?25h[?25l>mer[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;159H[K[5;69H[?12l[?25h[?25l>er[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;158H[K[5;69H[?12l[?25h[?25l>r[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;157H[K[5;69H[?12l[?25h[?25l>[31m:"+customer+"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;156H[K[5;69H[?12l[?25h[?25l>[35m"[m[31m+customer+[m[35m"[m\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;155H[K[5;69H[?12l[?25h[?25l>+customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;154H[K[6;1H  [35mend
+end[5;69H[?12l[?25h[?25l[m>customer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;153H[K[5;69H[?12l[?25h[?25l>ustomer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;152H[K[5;69H[?12l[?25h[?25l>stomer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;151H[K[5;69H[?12l[?25h[?25l>tomer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;150H[K[5;69H[?12l[?25h[?25l>omer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;149H[K[5;69H[?12l[?25h[?25l>mer+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;148H[K[5;69H[?12l[?25h[?25l>er+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;147H[K[5;69H[?12l[?25h[?25l>r+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;146H[K[5;69H[?12l[?25h[?25l>+[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;145H[K[5;69H[?12l[?25h[?25l>[35m"\n[m[31mtime:[m[35m"[m+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;144H[K[5;69H[?12l[?25h[?25l>\ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;143H[K[6;1H[31m  end
+end[5;69H[?12l[?25h[?25l[m>ntime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;142H[K[5;69H[?12l[?25h[?25l>time[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;141H[K[5;69H[?12l[?25h[?25l>ime[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;140H[K[5;69H[?12l[?25h[?25l>me[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;139H[K[5;69H[?12l[?25h[?25l>e[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;138H[K[5;69H[?12l[?25h[?25l>[31m:"+time+"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;137H[K[5;69H[?12l[?25h[?25l>[35m"[m[31m+time+[m[35m"[m\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;136H[K[5;69H[?12l[?25h[?25l>+time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;135H[K[6;1H  [35mend
+end[5;69H[?12l[?25h[?25l[m>time+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;134H[K[5;69H[?12l[?25h[?25l>ime+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;133H[K[5;69H[?12l[?25h[?25l>me+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;132H[K[5;69H[?12l[?25h[?25l>e+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;131H[K[5;69H[?12l[?25h[?25l>+[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;130H[K[5;69H[?12l[?25h[?25l>[35m"\n[m[31mpeople:[m[35m"[m+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;129H[K[5;69H[?12l[?25h[?25l>\npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;128H[K[6;1H[31m  end
+end[5;69H[?12l[?25h[?25l[m>npeople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;127H[K[5;69H[?12l[?25h[?25l>people[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;126H[K[5;69H[?12l[?25h[?25l>eople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;125H[K[5;69H[?12l[?25h[?25l>ople[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;124H[K[5;69H[?12l[?25h[?25l>ple[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;123H[K[5;69H[?12l[?25h[?25l>le[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;122H[K[5;69H[?12l[?25h[?25l>e[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;121H[K[5;69H[?12l[?25h[?25l>[31m:"+people+"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;120H[K[5;69H[?12l[?25h[?25l>[35m"[m[31m+people+[m[35m"[m\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;119H[K[5;69H[?12l[?25h[?25l>+people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;118H[K[6;1H  [35mend
+end[5;69H[?12l[?25h[?25l[m>people+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;117H[K[5;69H[?12l[?25h[?25l>eople+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;116H[K[5;69H[?12l[?25h[?25l>ople+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;115H[K[5;69H[?12l[?25h[?25l>ple+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;114H[K[5;69H[?12l[?25h[?25l>le+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;113H[K[5;69H[?12l[?25h[?25l>e+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;112H[K[5;69H[?12l[?25h[?25l>+[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;111H[K[5;69H[?12l[?25h[?25l>[35m"\n[m[31mgift:[m[35m"[m+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;110H[K[5;69H[?12l[?25h[?25l>\ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;109H[K[6;1H[31m  end
+end[5;69H[?12l[?25h[?25l[m>ngift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;108H[K[5;69H[?12l[?25h[?25l>gift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;107H[K[5;69H[?12l[?25h[?25l>ift[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;106H[K[5;69H[?12l[?25h[?25l>ft[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;105H[K[5;69H[?12l[?25h[?25l>t[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;104H[K[5;69H[?12l[?25h[?25l>[31m:"+gift+"[m\ncustomer phone[31m:"+phone)[m[5;103H[K[5;69H[?12l[?25h[?25l>[35m"[m[31m+gift+[m[35m"[m\ncustomer phone[31m:"+phone)[m[5;102H[K[5;69H[?12l[?25h[?25l>+gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;101H[K[6;1H  [35mend
+end[5;69H[?12l[?25h[?25l[m>gift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;100H[K[5;69H[?12l[?25h[?25l>ift+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;99H[K[5;69H[?12l[?25h[?25l>ft+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;98H[K[5;69H[?12l[?25h[?25l>t+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;97H[K[5;69H[?12l[?25h[?25l>+[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;96H[K[5;69H[?12l[?25h[?25l>[35m"\n[m[31mcustomer phone:[m[35m"[m+phone)[5;95H[K[5;69H[?12l[?25h[?25l>\ncustomer phone[31m:"+phone)[m[5;94H[K[6;1H[31m  end
+end[5;69H[?12l[?25h[?25l[m>ncustomer phone[31m:"+phone)[m[5;93H[K[5;69H[?12l[?25h[?25l>customer phone[31m:"+phone)[m[5;92H[K[5;69H[?12l[?25h[?25l>ustomer phone[31m:"+phone)[m[5;91H[K[5;69H[?12l[?25h[?25l>stomer phone[31m:"+phone)[m[5;90H[K[5;69H[?12l[?25h[?25l>tomer phone[31m:"+phone)[m[5;89H[K[5;69H[?12l[?25h[?25l>omer phone[31m:"+phone)[m[5;88H[K[5;69H[?12l[?25h[?25l>mer phone[31m:"+phone)[m[5;87H[K[5;69H[?12l[?25h[?25l>er phone[31m:"+phone)[m[5;86H[K[5;69H[?12l[?25h[?25l>r phone[31m:"+phone)[m[5;85H[K[5;69H[?12l[?25h[?25l> phone[31m:"+phone)[m[5;84H[K[5;69H[?12l[?25h[?25l>phone[31m:"+phone)[m[5;83H[K[5;69H[?12l[?25h[?25l>hone[31m:"+phone)[m[5;82H[K[5;69H[?12l[?25h[?25l>one[31m:"+phone)[m[5;81H[K[5;69H[?12l[?25h[?25l>ne[31m:"+phone)[m[5;80H[K[5;69H[?12l[?25h[?25l>e[31m:"+phone)[m[5;79H[K[5;69H[?12l[?25h[?25l>[31m:"+phone)[m[5;78H[K[5;69H[?12l[?25h[?25l>[35m"[m[31m+phone)[m[5;77H[K[5;69H[?12l[?25h[?25l>+phone)[5;76H[K[6;1H  [35mend
+end[5;69H[?12l[?25h[?25l[m>phone)[5;75H[K[5;69H[?12l[?25h[?25l>hone)[5;74H[K[5;69H[?12l[?25h[?25l>one)[5;73H[K[5;69H[?12l[?25h[?25l>ne)[5;72H[K[5;69H[?12l[?25h[?25l>e)[5;71H[K[5;69H[?12l[?25h[?25l>)[5;70H[K[5;13H[106m([55C)[?12l[?25h[?25l[m>[106mc[m)c[106m)[m[54;179H5-70[5;70H[?12l[?25h[?25lc[106mo[m)o[106m)[m[54;179H6-71[5;71H[?12l[?25h[?25lo[106mn[m)n[106m)[m[54;179H7-72[5;72H[?12l[?25h[?25ln[106mt[m)t[106m)[m[54;179H8-73[5;73H[?12l[?25h[?25lt[106me[m)e[106m)[m[54;179H9-74[5;74H[?12l[?25h[?25le[106mx[m)x[106m)[m[54;178H80-75[5;75H[?12l[?25h[?25lx[106mt[m)t[106m)[m[54;179H1-76[5;76H[?12l[?25h[?25l[5;13H([62C)[54;179H0-75[5;75H[?12l[?25h[?25l[54;178H79-74[5;74H[?12l[?25h[?25l[54;179H8-73[5;73H[?12l[?25h[?25l[54;179H7-72[5;72H[?12l[?25h[?25l[54;179H6-71[5;71H[?12l[?25h[?25l[54;179H5-70[5;70H[?12l[?25h[?25l[54;179H4-69[5;69H[?12l[?25h[?25l[54;179H3-68[5;68H[?12l[?25h[?25l[54;179H2-67[5;67H[?12l[?25h[?25l[54;179H1-66[5;66H[?12l[?25h[?25l[54;179H0-65[5;65H[?12l[?25h[?25l[54;178H69-64[5;64H[?12l[?25h[?25l[54;179H8-63[5;63H[?12l[?25h[?25l[54;179H7-62[5;62H[?12l[?25h[?25l[54;179H6-61[5;61H[?12l[?25h[?25l[54;179H5-60[5;60H[?12l[?25h[?25l[54;179H4-59[5;59H[?12l[?25h[?25l[54;179H1-57[5;57H[?12l[?25h[?25l[54;178H58-55[5;55H[?12l[?25h[?25l[54;179H5-53[5;53H[?12l[?25h[?25l[54;179H2-51[5;51H[?12l[?25h[?25l[54;178H49   [5;49H[?12l[?25h[?25l[54;179H8[5;48H[?12l[?25h[?25l[54;179H7[5;47H[?12l[?25h[?25l[54;179H6[5;46H[?12l[?25h[?25l[54;179H5[5;45H[?12l[?25h[?25l[54;179H4[5;44H[?12l[?25h[?25l[54;179H3[5;43H[?12l[?25h[?25l[54;179H2[5;42H[?12l[?25h[?25l[54;179H1[5;41H[?12l[?25h[?25l[54;179H0[5;40H[?12l[?25h[?25l[54;178H39[5;39H[?12l[?25h[?25l[54;179H8[5;38H[?12l[?25h[?25l[54;179H7[5;37H[?12l[?25h[?25l[54;179H6[5;36H[?12l[?25h[?25l[54;179H5[5;35H[?12l[?25h[?25l[54;179H4[5;34H[?12l[?25h[?25l[54;179H3[5;33H[?12l[?25h[?25l[54;179H2[5;32H[?12l[?25h[?25l[54;179H1[5;31H[?12l[?25h[?25l[54;179H0[5;30H[?12l[?25h[?25l[54;178H29[5;29H[?12l[?25h[?25leemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;76H[K[54;179H8[5;28H[?12l[?25h[?25lemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;75H[K[54;179H7[5;27H[?12l[?25h[?25loemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;74H[K[54;179H6[5;26H[?12l[?25h[?25ltemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;73H[K[54;179H5[5;25H[?12l[?25h[?25lsemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;72H[K[54;179H4[5;24H[?12l[?25h[?25luemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;71H[K[54;179H3[5;23H[?12l[?25h[?25lcemail, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;70H[K[54;179H2[5;22H[?12l[?25h[?25l email, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[5;69H[K[54;179H1[5;21H[?12l[?25h[?25l[54;179H2[5;22H[?12l[?25h[?25l[54;179H3[5;23H[?12l[?25h[?25l[54;179H4[5;24H[?12l[?25h[?25l[54;179H5[5;25H[?12l[?25h[?25l[54;179H6[5;26H[?12l[?25h[?25lla, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[54;179H7[5;27H[?12l[?25h[?25lad, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[54;179H8[5;28H[?12l[?25h[?25ldd, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)[54;179H9[5;29H[?12l[?25h[54;1H[K[5;28H[?25l[54;176H5,28[10CAll[5;28H[?12l[?25h[?25l[54;176H6,5 [6;5H[?12l[?25h[?25l[54;176H5,28[5;28H[?12l[?25h[?25l[54;176H4[4;28H[?12l[?25h[?25l[54;176H3,0-1[3;1H[?12l[?25h[?25l[54;176H2,28 [2;28H[?12l[?25h[?25l[2;53r[53;1H
+[1;54r[53;1H[94m~                                                                                                                                                                                                [m[54;176H[K[54;176H2,0-1[9CAll[2;1H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;176H[K[54;176H2,1[11CAll[2;1H[?12l[?25h[?25l[54;178H2[2;2H[?12l[?25h[?25l[54;178H3[2;3H[?12l[?25h[?25l default [31mfrom[m: [35m"[m[31mdashanba.test@gmail.com[m[35m"[m[54;178H42[2;42H[?12l[?25h[?25l[3;53r[3;1H[L[1;54r[54;176H[K[54;176H3,1[11CAll[3;1H[?12l[?25h[54;1H[K[3;1H[?25l[54;176H3,0-1[9CAll[3;1H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;176H[K[54;176H3,1[11CAll[3;1H[?12l[?25h[?25l[54;176H4[4;1H[?12l[?25h[54;1H[K[4;1H[?25l[54;176H4,1[11CAll[4;1H[?12l[?25h[?25l[54;176H[K[54;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"feedback.rb" 7L, 200C written[145C4,1[11CAll[54;176H[K[54;176H4,1[11CAll[4;1H[?12l[?25h[?25l[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ sudo rails c
+Loading development environment (Rails 3.2.11)
+irb(main):001:0> Vender.confirm("changcheng.tu@gmail.com",@mission.c_name,@mission.start.to_s,@mission.num_of_people.to_s,@mission.gift,@mission.c_phone,@mission.c_email).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver[1P).deliver:).deliver:).deliver[1P).deliver[1P).deliver").deliver").delivert").delivere").delivers").delivert").deliver[C[1P.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CF.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck.confirm("changcheng.tu@gmail.com","test").deliver[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+SyntaxError: /home/tdog/project1/app/mailers/feedback.rb:5: invalid multibyte char (US-ASCII)
+/home/tdog/project1/app/mailers/feedback.rb:5: invalid multibyte char (US-ASCII)
+/home/tdog/project1/app/mailers/feedback.rb:5: syntax error, unexpected $end, expecting ')'
+...to => emailadd, :subject => "有人提問了", :body=>contex...
+...                               ^
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:469:in `load'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:469:in `block in load_file'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:639:in `new_constants_in'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:468:in `load_file'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:353:in `require_or_load'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:502:in `load_missing_constant'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:192:in `block in const_missing'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:190:in `each'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:190:in `const_missing'
+	from (irb):1
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+irb(main):002:0> exit
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ sudo rails cvi feedback.rb ls[Kcd app/mailers/ls[K
+feedback.rb
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ sudo vi feedback.rb 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"feedback.rb" 7L, 200C[>c[1;1H[35mclass[m [32mFeedback[m < [32mActionMailer[m::[32mBase[m
+  default [31mfrom[m: [35m"[m[31mdashanba.test@gmail.com[m[35m"[m[4;4H [35mdef[m [36mconfirm[m(emailadd,context)[5;8H mail([31m:to[m => emailadd, [31m:subject[m => [35m"[m[31m有人提問了[m[35m"[m, [31m:body[m=>context)
+  [35mend
+end[m
+[94m~                                                                                                                                                                                                [9;1H~                                                                                                                                                                                                [10;1H~                                                                                                                                                                                                [11;1H~                                                                                                                                                                                                [12;1H~                                                                                                                                                                                                [13;1H~                                                                                                                                                                                                [14;1H~                                                                                                                                                                                                [15;1H~                                                                                                                                                                                                [16;1H~                                                                                                                                                                                                [17;1H~                                                                                                                                                                                                [18;1H~                                                                                                                                                                                                [19;1H~                                                                                                                                                                                                [20;1H~                                                                                                                                                                                                [21;1H~                                                                                                                                                                                                [22;1H~                                                                                                                                                                                                [23;1H~                                                                                                                                                                                                [24;1H~                                                                                                                                                                                                [25;1H~                                                                                                                                                                                                [26;1H~                                                                                                                                                                                                [27;1H~                                                                                                                                                                                                [28;1H~                                                                                                                                                                                                [29;1H~                                                                                                                                                                                                [30;1H~                                                                                                                                                                                                [31;1H~                                                                                                                                                                                                [32;1H~                                                                                                                                                                                                [33;1H~                                                                                                                                                                                                [34;1H~                                                                                                                                                                                                [35;1H~                                                                                                                                                                                                [36;1H~                                                                                                                                                                                                [37;1H~                                                                                                                                                                                                [38;1H~                                                                                                                                                                                                [39;1H~                                                                                                                                                                                                [40;1H~                                                                                                                                                                                                [41;1H~                                                                                                                                                                                                [42;1H~                                                                                                                                                                                                [43;1H~                                                                                                                                                                                                [44;1H~                                                                                                                                                                                                [45;1H~                                                                                                                                                                                                [46;1H~                                                                                                                                                                                                [47;1H~                                                                                                                                                                                                [48;1H~                                                                                                                                                                                                [49;1H~                                                                                                                                                                                                [50;1H~                                                                                                                                                                                                [51;1H~                                                                                                                                                                                                [52;1H~                                                                                                                                                                                                [53;1H~                                                                                                                                                                                                [m[54;176H1,1[11CAll[1;1H[?12l[?25h[?25l[54;176H2[2;1H[?12l[?25h[?25l[54;176H3,0-1[3;1H[?12l[?25h[?25l[54;176H4,1  [4;1H[?12l[?25h[?25l[54;176H5[5;1H[?12l[?25h[?25l[54;178H2[5;2H[?12l[?25h[?25l[54;178H3[5;3H[?12l[?25h[?25l[54;178H4[5;4H[?12l[?25h[?25l[54;178H5[5;5H[?12l[?25h[?25l[54;178H6[5;6H[?12l[?25h[?25l[54;178H7[5;7H[?12l[?25h[?25l[54;178H8[5;8H[?12l[?25h[?25l[54;178H9[5;9H[?12l[?25h[?25l[54;178H10[5;10H[?12l[?25h[?25l[54;179H1[5;11H[?12l[?25h[?25l[54;179H2[5;12H[?12l[?25h[?25ll[106m([57C)[m[54;179H3[5;13H[?12l[?25h[?25l([57C)[54;179H4[5;14H[?12l[?25h[?25l[54;179H5[5;15H[?12l[?25h[?25l[54;179H6[5;16H[?12l[?25h[?25l[54;179H7[5;17H[?12l[?25h[?25l[54;179H8[5;18H[?12l[?25h[?25l[54;179H9[5;19H[?12l[?25h[?25l[54;178H20[5;20H[?12l[?25h[?25l[54;179H1[5;21H[?12l[?25h[?25l[54;179H2[5;22H[?12l[?25h[?25l[54;179H3[5;23H[?12l[?25h[?25l[54;179H4[5;24H[?12l[?25h[?25l[54;179H5[5;25H[?12l[?25h[?25l[54;179H6[5;26H[?12l[?25h[?25l[54;179H7[5;27H[?12l[?25h[?25l[54;179H8[5;28H[?12l[?25h[?25l[54;179H9[5;29H[?12l[?25h[?25l[54;178H30[5;30H[?12l[?25h[?25l[54;179H1[5;31H[?12l[?25h[?25l[54;179H2[5;32H[?12l[?25h[?25l[54;179H3[5;33H[?12l[?25h[?25l[54;179H4[5;34H[?12l[?25h[?25l[54;179H5[5;35H[?12l[?25h[?25l[54;179H6[5;36H[?12l[?25h[?25l[54;179H7[5;37H[?12l[?25h[?25l[54;179H8[5;38H[?12l[?25h[?25l[54;179H9[5;39H[?12l[?25h[?25l[54;178H40[5;40H[?12l[?25h[?25l[54;179H1[5;41H[?12l[?25h[?25l[54;179H2[5;42H[?12l[?25h[?25l[54;179H3[5;43H[?12l[?25h[?25l[54;179H4[5;44H[?12l[?25h[?25l[54;179H7-46[5;46H[?12l[?25h[?25l[54;178H50-48[5;48H[?12l[?25h[?25l[54;179H3-50[5;50H[?12l[?25h[?25l[54;179H6-52[5;52H[?12l[?25h[?25l[54;179H9-54[5;54H[?12l[?25h[?25l[54;178H60-55[5;55H[?12l[?25h[?25l[54;178H59-54[5;54H[?12l[?25h[?25l[54;179H6-52[5;52H[?12l[?25h[?25l[54;179H3-50[5;50H[?12l[?25h[?25l[54;179H6-52[5;52H[?12l[?25h[?25l[54;179H9-54[5;54H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;13H[K[54;176H5,59-54[7CAll[5;54H[?12l[?25h[?25l[35m"[m, [31m:body[m=>context)[5;70H[K[54;179H6-52[5;52H[?12l[?25h[?25l[35m"[m, [31m:body[m=>context)[5;68H[K[54;179H3-50[5;50H[?12l[?25h[?25l[35m"[m, [31m:body[m=>context)[5;66H[K[54;179H0-48[5;48H[?12l[?25h[?25l[35m"[m, [31m:body[m=>context)[5;64H[K[54;178H47-46[5;46H[?12l[?25h[?25l[35m""[m, [31m:body[m=>context)[5;62H[K[54;179H4   [5;44H[?12l[?25h[?25l[35m"[m[31ms[m[35m"[m, [31m:body[m=>context)[54;179H5[5;45H[?12l[?25h[?25l[31mso[m[35m"[m, [31m:body[m=>context)[54;179H6[5;46H[?12l[?25h[?25l[31mom[m[35m"[m, [31m:body[m=>context)[54;179H7[5;47H[?12l[?25h[?25l[31mme[m[35m"[m, [31m:body[m=>context)[54;179H8[5;48H[?12l[?25h[?25l[31meo[m[35m"[m, [31m:body[m=>context)[54;179H9[5;49H[?12l[?25h[?25l[31mon[m[35m"[m, [31m:body[m=>context)[54;178H50[5;50H[?12l[?25h[?25l[31mne[m[35m"[m, [31m:body[m=>context)[54;179H1[5;51H[?12l[?25h[?25l[31me [m[35m"[m, [31m:body[m=>context)[54;179H2[5;52H[?12l[?25h[?25l[31m h[m[35m"[m, [31m:body[m=>context)[54;179H3[5;53H[?12l[?25h[?25l[31mha[m[35m"[m, [31m:body[m=>context)[54;179H4[5;54H[?12l[?25h[?25l[31mas[m[35m"[m, [31m:body[m=>context)[54;179H5[5;55H[?12l[?25h[?25l[31ms [m[35m"[m, [31m:body[m=>context)[54;179H6[5;56H[?12l[?25h[?25l[31m a[m[35m"[m, [31m:body[m=>context)[54;179H7[5;57H[?12l[?25h[?25l[31ma [m[35m"[m, [31m:body[m=>context)[54;179H8[5;58H[?12l[?25h[?25l[31m q[m[35m"[m, [31m:body[m=>context)[54;179H9[5;59H[?12l[?25h[?25l[31mqu[m[35m"[m, [31m:body[m=>context)[54;178H60[5;60H[?12l[?25h[?25l[31mue[m[35m"[m, [31m:body[m=>context)[54;179H1[5;61H[?12l[?25h[?25l[31mes[m[35m"[m, [31m:body[m=>context)[54;179H2[5;62H[?12l[?25h[?25l[31mst[m[35m"[m, [31m:body[m=>context)[54;179H3[5;63H[?12l[?25h[?25l[31mti[m[35m"[m, [31m:body[m=>context)[54;179H4[5;64H[?12l[?25h[?25l[31mio[m[35m"[m, [31m:body[m=>context)[54;179H5[5;65H[?12l[?25h[?25l[31mon[m[35m"[m, [31m:body[m=>context)[54;179H6[5;66H[?12l[?25h[54;1H[K[5;65H[?25l[54;176H5,65[10CAll[5;65H[?12l[?25h[?25l[54;176H[K[54;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"feedback.rb" 7L, 207C written[145C5,65[10CAll[54;176H[K[54;176H5,65[10CAll[5;65H[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ sudo vi feedback.rb ls[Ksudo rails c
+Loading development environment (Rails 3.2.11)
+irb(main):001:0> Feedback.confirm("changcheng.tu@gmail.com","test").deliver
+=> #<Mail::Message:27976560, Multipart: false, Headers: <Date: Wed, 23 Jan 2013 10:08:43 +0800>, <From: dashanba.test@gmail.com>, <To: changcheng.tu@gmail.com>, <Message-ID: <50ff462b2c4ad_6a78da874312b3@ctm135042.mail>>, <Subject: someone has a question>, <Mime-Version: 1.0>, <Content-Type: text/plain>, <Content-Transfer-Encoding: 7bit>>
+irb(main):002:0> exit
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ cd ..
+]0;tdog@ctm135042: ~/project1/apptdog@ctm135042:~/project1/app$ cd ..
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ cd app/controllers/
+]0;tdog@ctm135042: ~/project1/app/controllerstdog@ctm135042:~/project1/app/controllers$ ls
+application_controller.rb  home_controller.rb  home_controller.rb~  teacher_controller.rb
+]0;tdog@ctm135042: ~/project1/app/controllerstdog@ctm135042:~/project1/app/controllers$ sudo vi home_controller.rb
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"home_controller.rb" 53L, 891C[>c[1;1H[35mclass[m [32mHomeController[m < [32mApplicationController[m[3;8H [35mdef[m [36mindex[m[4;8H [35mend[m[6;8H [35mdef[m [36mtest[m[7;8H [35mend[m[9;8H [35mdef[m [36mgoal[m[10;8H [35mend[m[12;8H [35mdef[m [36maboutus[m[13;8H [35mend[m[15;8H [35mdef[m [36merror[m[16;8H [35mend[m[18;8H [35mdef[m [36mdreamcoffee[m[19;8H [35mend[m[21;8H [35mdef[m [36mactivity[m[22;8H [35mend[m[24;8H [35mdef[m [36mnew[m[25;16H [36m@showFeedbacks[m = [32mFeedback[m.all[26;8H [35mend[m[28;8H [35mdef[m [36mcreate[m[29;16H params[[31m:feedback[m][[31m:context[m]=params[[31m:feedback[m][[31m:context[m].gsub([35m/\r\n?/[m, [35m"\n"[m)[30;16H [36m@feedback[m = [32mFeedback[m.new(params[[31m:feedback[m])[31;16H [38;5;130mif[m [36m@feedback[m.save[32;24H redirect_to new_home_path[33;16H [38;5;130melse[m[34;24H redirect_to home_error_path[35;16H [38;5;130mend[m[36;8H [35mend[m[38;8H [35mdef[m [36mshow[m[40;16H [36m@id[m = params[[31m:id[m][41;16H [36m@showFeedbackContext[m = [32mFeedback[m.find([36m@id[m)[42;16H [36m@showAnswerContext[m = [32mFeedback[m.find([36m@id[m).answers.all[43;16H [36m@showDiscussContext[m = [32mFeedback[m.find([36m@id[m).discusses.all[44;8H [35mend[m[46;8H [35mdef[m [36msavediscuss[m[47;16H params[[31m:discuss[m][[31m:context[m]=params[[31m:discuss[m][[31m:context[m].gsub([35m/\r\n?/[m, [35m"\n"[m)[48;16H [36m@discuss[m = [32mDiscuss[m.new(params[[31m:discuss[m])[49;16H [36m@discuss[m.save[50;16H redirect_to home_path(params[[31m:discuss[m][[31m:feedback_id[m])[51;8H [35mend
+
+end[m[54;176H1,1[11CAll[1;1H[?12l[?25h[?25l[54;176H2,0-1[2;1H[?12l[?25h[?25l[54;176H3,1-8[3;8H[?12l[?25h[?25l[54;176H4[4;8H[?12l[?25h[?25l[54;176H5,0-1[5;1H[?12l[?25h[?25l[54;176H6,1-8[6;8H[?12l[?25h[?25l[54;176H7[7;8H[?12l[?25h[?25l[54;176H8,0-1[8;1H[?12l[?25h[?25l[54;176H9,1-8[9;8H[?12l[?25h[?25l[54;176H10,1-8[10;8H[?12l[?25h[?25l[54;177H1,0-1[11;1H[?12l[?25h[?25l[54;177H2,1-8[12;8H[?12l[?25h[?25l[54;177H3[13;8H[?12l[?25h[?25l[54;177H4,0-1[14;1H[?12l[?25h[?25l[54;177H5,1-8[15;8H[?12l[?25h[?25l[54;177H6[16;8H[?12l[?25h[?25l[54;177H7,0-1[17;1H[?12l[?25h[?25l[54;177H8,1-8[18;8H[?12l[?25h[?25l[54;177H9[19;8H[?12l[?25h[?25l[54;176H20,0-1[20;1H[?12l[?25h[?25l[54;177H1,1-8[21;8H[?12l[?25h[?25l[54;177H2[22;8H[?12l[?25h[?25l[54;177H3[23;8H[?12l[?25h[?25l[54;177H4[24;8H[?12l[?25h[?25l[54;177H5[25;8H[?12l[?25h[?25l[54;177H6[26;8H[?12l[?25h[?25l[54;177H7,0-1[27;1H[?12l[?25h[?25l[54;177H8,1-8[28;8H[?12l[?25h[?25l[54;177H9[29;8H[?12l[?25h[?25l[54;176H30[30;8H[?12l[?25h[?25l[54;179H2-16[30;16H[?12l[?25h[?25l[54;179H3-17[30;17H[?12l[?25h[?25l[54;179H4-18[30;18H[?12l[?25h[?25l[54;179H5-19[30;19H[?12l[?25h[?25l[54;179H6-20[30;20H[?12l[?25h[?25l[54;179H7-21[30;21H[?12l[?25h[?25l[54;179H8-22[30;22H[?12l[?25h[?25l[54;179H9-23[30;23H[?12l[?25h[?25l[54;179H10-24[30;24H[?12l[?25h[?25l[54;180H1-25[30;25H[?12l[?25h[?25l[54;180H2-26[30;26H[?12l[?25h[?25l[54;180H3-27[30;27H[?12l[?25h[?25l[54;180H4-28[30;28H[?12l[?25h[?25l[54;180H5-29[30;29H[?12l[?25h[?25l[54;180H6-30[30;30H[?12l[?25h[?25l[54;180H7-31[30;31H[?12l[?25h[?25l[54;180H8-32[30;32H[?12l[?25h[?25l[54;180H9-33[30;33H[?12l[?25h[?25l[54;179H20-34[30;34H[?12l[?25h[?25l[54;177H1,19-33[31;33H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;13H[K[54;176H31,19-33      All[31;33H[?12l[?25h[?25l[54;179H20-34[31;34H[?12l[?25h[?25l[32;53r[32;1H[L[1;54r[54;176H[K[54;176H32,1[10CTop[32;1H[?12l[?25h[?25l[54;179H2-9[32;9H[?12l[?25h[?25l[54;179H3-17[32;17H[?12l[?25h[?25l[54;179H4-25[32;25H[?12l[?25h[?25l [32mFeedback[m.confirm([35m"[m[31mchangcheng.tu@gmail.com[m[35m"[m,[35m"[m[31mtest[m[35m"[m).deliver[54;179H62-83[32;83H[?12l[?25h[?25l[54;180H1-82[32;82H[?12l[?25h[?25l[54;180H0-81[32;81H[?12l[?25h[?25l[54;179H59-80[32;80H[?12l[?25h[?25l[54;180H8-79[32;79H[?12l[?25h[?25l[54;180H7-78[32;78H[?12l[?25h[?25l[54;180H6-77[32;77H[?12l[?25h[?25l[54;180H5-76[32;76H[?12l[?25h[?25l[32;41H[106m([32C)[m[54;180H4-75[32;75H[?12l[?25h[?25l[54;180H3-74[32;74H[?12l[?25h[?25l[32;41H([32C)[54;180H2-73[32;73H[?12l[?25h[?25l[31ms[m[35m"[m).deliver[32;82H[K[54;180H1-72[32;72H[?12l[?25h[?25l[31me[m[35m"[m).deliver[32;81H[K[54;180H0-71[32;71H[?12l[?25h[?25l[31mt[m[35m"[m).deliver[32;80H[K[54;179H49-70[32;70H[?12l[?25h[?25l[35m""[m).deliver[32;79H[K[54;180H8-69[32;69H[?12l[?25h[?25l[32;41H[106m([28C)[m[54;180H9-70[32;70H[?12l[?25h[?25l[35m"[m[31m)[m[31m[106m.[m[31mdeliver[m[32;78H[K[33;1H[31m                        redirect_to new_home_path
+                else
+                        redirect_to home_error_path
+                end
+        end
+        
+        def show
+                
+                @id = params[:id]
+                @showFeedbackContext = Feedback.find(@id)       
+                @showAnswerContext = Feedback.find(@id).answers.all
+                @showDiscussContext = Feedback.find(@id).discusses.all
+        end
+
+        def savediscuss
+                params[[8C][[8C]=params[[8C][[8C].gsub(/[4C?/, [m[1C\n[1C[31m)
+                @discuss = Discuss.new(params[[8C])
+                @discuss.save
+                redirect_to home_path(params[[8C][[12C])
+        end[m[32;69H[31m[106m)[m[31m.[m[54;180H8-69[32;69H[?12l[?25h[?25l,)[106m.[mdeliver[32;77H[K[33;1H                        redirect_to new_home_path
+                [38;5;130melse[m
+                        redirect_to home_error_path
+                [38;5;130mend[m
+        [35mend[m
+        
+        [35mdef[m [36mshow[m
+                
+                [36m@id[m = params[[3C]
+                [36m@showFeedbackContext[m = [32mFeedback[m.find([36m@id[m)       
+                [36m@showAnswerContext[m = [32mFeedback[m.find([36m@id[m).answers.all
+                [36m@showDiscussContext[m = [32mFeedback[m.find([36m@id[m).discusses.all
+        [35mend[m
+
+        [35mdef[m [36msavediscuss[m
+                params[[8C][[8C]=params[[8C][[8C].gsub([35m/\r\n?/[m, [1C[35m\n[m[1C)
+                [36m@discuss[m = [32mDiscuss[m.new(params[[8C])
+                [36m@discuss[m.save
+                redirect_to home_path(params[[8C][[12C])
+        [35mend[m[32;68H[106m)[m.[54;180H7-68[32;68H[?12l[?25h[?25l,[106m@[m).deliver[32;68H@[106m)[m[54;180H8-69[32;69H[?12l[?25h[?25l,)[106m.[mdeliver[32;77H[K[32;68H[106m)[m.[54;180H7-68[32;68H[?12l[?25h[?25l,[106mp[m).deliver[32;68Hp[106m)[m[54;180H8-69[32;69H[?12l[?25h[?25lp[106ma[m).deliver[32;69Ha[106m)[m[54;180H9-70[32;70H[?12l[?25h[?25la[106mr[m).deliver[32;70Hr[106m)[m[54;179H50-71[32;71H[?12l[?25h[?25lr[106ma[m).deliver[32;71Ha[106m)[m[54;180H1-72[32;72H[?12l[?25h[?25la[106mm[m).deliver[32;72Hm[106m)[m[54;180H2-73[32;73H[?12l[?25h[?25lm[106ms[m).deliver[32;73Hs[106m)[m[54;180H3-74[32;74H[?12l[?25h[?25ls[106m{[m).deliver[34;17Helse[36;17Hend[37;9Hend[32;74H{[106m)[m[54;180H4-75[32;75H[?12l[?25h[?25l{[106m}[m).deliver[34;17H[38;5;130melse[36;17Hend[m[37;9H[35mend[m[32;75H}[106m)[m[54;180H5-76[32;76H[?12l[?25h[?25l{)[106m.[mdeliver[32;84H[K[34;17Helse[36;17Hend[37;9Hend[32;75H[106m)[m.[54;180H4-75[32;75H[?12l[?25h[?25ls)[106m.[mdeliver[32;83H[K[34;17H[38;5;130melse[36;17Hend[m[37;9H[35mend[m[32;74H[106m)[m.[54;180H3-74[32;74H[?12l[?25h[?25ls[106m[[m).deliver[32;74H[[106m)[m[54;180H4-75[32;75H[?12l[?25h[?25l[[106m][m).deliver[32;75H][106m)[m[54;180H5-76[32;76H[?12l[?25h[?25l[32;41H([32C[106m[][m)[54;180H4-75[32;75H[?12l[?25h[?25l[106m[:[m]).deliver[32;75H:[106m][m[54;180H5-76[32;76H[?12l[?25h[?25l[31m:[m[31m[106mf[m]).deliver[32;76H[31mf[m[106m][m[54;180H6-77[32;77H[?12l[?25h[?25l[31mf[m[31m[106me[m]).deliver[32;77H[31me[m[106m][m[54;180H7-78[32;78H[?12l[?25h[?25l[31me[m[31m[106me[m]).deliver[32;78H[31me[m[106m][m[54;180H8-79[32;79H[?12l[?25h[?25l[31me[m[31m[106md[m]).deliver[32;79H[31md[m[106m][m[54;180H9-80[32;80H[?12l[?25h[?25l[31md[m[31m[106ma[m]).deliver[32;80H[31ma[m[106m][m[54;179H60-81[32;81H[?12l[?25h[?25l[31ma[m[31m[106mc[m]).deliver[32;81H[31mc[m[106m][m[54;180H1-82[32;82H[?12l[?25h[?25l[32;74H[[7C][54;180H0-81[32;81H[?12l[?25h[?25l[54;179H59-80[32;80H[?12l[?25h[?25l[31mdbac[m]).deliver[54;179H60-81[32;81H[?12l[?25h[?25l[54;180H1-82[32;82H[?12l[?25h[?25l[32;74H[106m[[8C][m[54;180H2-83[32;83H[?12l[?25h[?25l[31mc[m[31m[106ml[m]).deliver[32;83H[31ml[m[106m][m[54;180H3-84[32;84H[?12l[?25h[?25l[31mc[m][106m)[m.deliver[32;93H[K[32;83H[106m][m)[54;180H2-83[32;83H[?12l[?25h[?25l[31mc[m[31m[106mk[m]).deliver[32;83H[31mk[m[106m][m[54;180H3-84[32;84H[?12l[?25h[?25l[32;41H[106m([m[32C[[9C][106m)[m[54;180H4-85[32;85H[?12l[?25h[?25l][106m[[m).deliver[32;85H[[106m)[m[54;180H5-86[32;86H[?12l[?25h[?25l[[106m][m).deliver[32;86H][106m)[m[54;180H6-87[32;87H[?12l[?25h[?25l[32;41H([43C[106m[][m)[54;180H5-86[32;86H[?12l[?25h[?25l[106m[:[m]).deliver[32;86H:[106m][m[54;180H6-87[32;87H[?12l[?25h[?25l[31m:[m[31m[106mc[m]).deliver[32;87H[31mc[m[106m][m[54;180H7-88[32;88H[?12l[?25h[?25l[31mc[m[31m[106mo[m]).deliver[32;88H[31mo[m[106m][m[54;180H8-89[32;89H[?12l[?25h[?25l[31mo[m[31m[106mn[m]).deliver[32;89H[31mn[m[106m][m[54;180H9-90[32;90H[?12l[?25h[?25l[31mn[m[31m[106mt[m]).deliver[32;90H[31mt[m[106m][m[54;179H70-91[32;91H[?12l[?25h[?25l[31mt[m[31m[106me[m]).deliver[32;91H[31me[m[106m][m[54;180H1-92[32;92H[?12l[?25h[?25l[31me[m[31m[106mx[m]).deliver[32;92H[31mx[m[106m][m[54;180H2-93[32;93H[?12l[?25h[?25l[31mx[m[31m[106mt[m]).deliver[32;93H[31mt[m[106m][m[54;180H3-94[32;94H[?12l[?25h[54;1H[K[32;93H[?25l[32;85H[[8C][54;176H32,72-93      Top[32;93H[?12l[?25h[?25l[54;176H[K[54;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"home_controller.rb" 54L, 974C written
+[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/app/controllerstdog@ctm135042:~/project1/app/controllers$ sudo raill[Ks s
+=> Booting WEBrick
+=> Rails 3.2.11 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-01-23 10:11:24] INFO  WEBrick 1.3.1
+[2013-01-23 10:11:24] INFO  ruby 1.9.3 (2011-10-30) [x86_64-linux]
+[2013-01-23 10:11:24] INFO  WEBrick::HTTPServer#start: pid=1776 port=3000
+
+
+Started GET "/" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /application.css - 304 Not Modified (22ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /home.css - 304 Not Modified (3ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /teacher.css - 304 Not Modified (1ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /application.js - 304 Not Modified (4ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.carouFredSel-6.1.1-packed.js" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /jquery.carouFredSel-6.1.1-packed.js - 304 Not Modified (2ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:11:26 +0800
+Served asset /logo.png - 304 Not Modified (1ms)
+[2013-01-23 10:11:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:11:29 +0800
+Processing by HomeController#new as HTML
+Completed 500 Internal Server Error in 417ms
+
+NoMethodError (undefined method `all' for Feedback:Class):
+  app/controllers/home_controller.rb:25:in `new'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:12:52 +0800
+Processing by HomeController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `all' for Feedback:Class):
+  app/controllers/home_controller.rb:25:in `new'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:12:52 +0800
+Processing by HomeController#new as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `all' for Feedback:Class):
+  app/controllers/home_controller.rb:25:in `new'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+
+ActionController::RoutingError (No route matches [GET] "/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/jquery.carouFredSel-6.1.1-packed.js" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /jquery.carouFredSel-6.1.1-packed.js - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/1.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /1.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/2.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /2.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/5.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /5.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/4.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /4.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/3.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /3.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/6.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /6.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/8.png" for 140.115.84.226 at 2013-01-23 10:12:54 +0800
+Served asset /8.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/7.png" for 140.115.84.226 at 2013-01-23 10:12:55 +0800
+Served asset /7.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:12:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/9.png" for 140.115.84.226 at 2013-01-23 10:12:55 +0800
+Served asset /9.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/10.png" for 140.115.84.226 at 2013-01-23 10:12:55 +0800
+Served asset /10.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/11.png" for 140.115.84.226 at 2013-01-23 10:12:55 +0800
+Served asset /11.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/poster.png" for 140.115.84.226 at 2013-01-23 10:12:55 +0800
+Served asset /poster.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/12.png" for 140.115.84.226 at 2013-01-23 10:12:55 +0800
+Served asset /12.png - 304 Not Modified (1ms)
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:12:55] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:12:59 +0800
+Processing by HomeController#new as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `all' for Feedback:Class):
+  app/controllers/home_controller.rb:25:in `new'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+^C[2013-01-23 10:13:37] INFO  going to shutdown ...
+[2013-01-23 10:13:37] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;tdog@ctm135042: ~/project1/app/controllerstdog@ctm135042:~/project1/app/controllers$ sudo rails c
+Loading development environment (Rails 3.2.11)
+irb(main):001:0> Feedback.all
+NoMethodError: undefined method `all' for Feedback:Class
+	from /usr/local/lib/ruby/gems/1.9.1/gems/actionmailer-3.2.11/lib/action_mailer/base.rb:438:in `method_missing'
+	from (irb):1
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+irb(main):002:0> Feedback.all[K[K[Kcreate():)n)a)m)e)=)>)t)e)s)t)"test)[C[C[C[C")`)[1P)
+NoMethodError: undefined method `create' for Feedback:Class
+	from /usr/local/lib/ruby/gems/1.9.1/gems/actionmailer-3.2.11/lib/action_mailer/base.rb:438:in `method_missing'
+	from (irb):2
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+irb(main):003:0> exit
+]0;tdog@ctm135042: ~/project1/app/controllerstdog@ctm135042:~/project1/app/controllers$ cd ..
+]0;tdog@ctm135042: ~/project1/apptdog@ctm135042:~/project1/app$ cd mailers/
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ ls
+feedback.rb
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ cd [K[K[Ksudo vi feedback.rb 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"feedback.rb" 7L, 207C[>c[1;1H[35mclass[m [32mFeedback[m < [32mActionMailer[m::[32mBase[m
+  default [31mfrom[m: [35m"[m[31mdashanba.test@gmail.com[m[35m"[m[4;4H [35mdef[m [36mconfirm[m(emailadd,context)[5;8H mail([31m:to[m => emailadd, [31m:subject[m => [35m"[m[31msomeone has a question[m[35m"[m, [31m:body[m=>context)
+  [35mend
+end[m
+[94m~                                                                                                                                                                                                [9;1H~                                                                                                                                                                                                [10;1H~                                                                                                                                                                                                [11;1H~                                                                                                                                                                                                [12;1H~                                                                                                                                                                                                [13;1H~                                                                                                                                                                                                [14;1H~                                                                                                                                                                                                [15;1H~                                                                                                                                                                                                [16;1H~                                                                                                                                                                                                [17;1H~                                                                                                                                                                                                [18;1H~                                                                                                                                                                                                [19;1H~                                                                                                                                                                                                [20;1H~                                                                                                                                                                                                [21;1H~                                                                                                                                                                                                [22;1H~                                                                                                                                                                                                [23;1H~                                                                                                                                                                                                [24;1H~                                                                                                                                                                                                [25;1H~                                                                                                                                                                                                [26;1H~                                                                                                                                                                                                [27;1H~                                                                                                                                                                                                [28;1H~                                                                                                                                                                                                [29;1H~                                                                                                                                                                                                [30;1H~                                                                                                                                                                                                [31;1H~                                                                                                                                                                                                [32;1H~                                                                                                                                                                                                [33;1H~                                                                                                                                                                                                [34;1H~                                                                                                                                                                                                [35;1H~                                                                                                                                                                                                [36;1H~                                                                                                                                                                                                [37;1H~                                                                                                                                                                                                [38;1H~                                                                                                                                                                                                [39;1H~                                                                                                                                                                                                [40;1H~                                                                                                                                                                                                [41;1H~                                                                                                                                                                                                [42;1H~                                                                                                                                                                                                [43;1H~                                                                                                                                                                                                [44;1H~                                                                                                                                                                                                [45;1H~                                                                                                                                                                                                [46;1H~                                                                                                                                                                                                [47;1H~                                                                                                                                                                                                [48;1H~                                                                                                                                                                                                [49;1H~                                                                                                                                                                                                [50;1H~                                                                                                                                                                                                [51;1H~                                                                                                                                                                                                [52;1H~                                                                                                                                                                                                [53;1H~                                                                                                                                                                                                [m[54;176H1,1[11CAll[1;1H[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ rails d mailer Feedback
+[1m[31m      remove[0m  app/mailers/feedback.rb
+[1m[37m      invoke[0m  erb
+[1m[31m      remove[0m    app/views/feedback
+[1m[37m      invoke[0m  test_unit
+[1m[31m      remove[0m    test/functional/feedback_test.rb
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ rails d mailer Feedback[1P[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[KSendmail
+[1m[32m      create[0m  app/mailers/sendmail.rb
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/sendmail
+[1m[37m      invoke[0m  test_unit
+[1m[32m      create[0m    test/functional/sendmail_test.rb
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ sudo vi sendmail.rb 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"sendmail.rb" 3L, 75C[>c[1;1H[35mclass[m [32mSendmail[m < [32mActionMailer[m::[32mBase[m
+  default [31mfrom[m: [35m"[m[31mfrom@example.com[m[35m"
+end[m
+[94m~                                                                                                                                                                                                [5;1H~                                                                                                                                                                                                [6;1H~                                                                                                                                                                                                [7;1H~                                                                                                                                                                                                [8;1H~                                                                                                                                                                                                [9;1H~                                                                                                                                                                                                [10;1H~                                                                                                                                                                                                [11;1H~                                                                                                                                                                                                [12;1H~                                                                                                                                                                                                [13;1H~                                                                                                                                                                                                [14;1H~                                                                                                                                                                                                [15;1H~                                                                                                                                                                                                [16;1H~                                                                                                                                                                                                [17;1H~                                                                                                                                                                                                [18;1H~                                                                                                                                                                                                [19;1H~                                                                                                                                                                                                [20;1H~                                                                                                                                                                                                [21;1H~                                                                                                                                                                                                [22;1H~                                                                                                                                                                                                [23;1H~                                                                                                                                                                                                [24;1H~                                                                                                                                                                                                [25;1H~                                                                                                                                                                                                [26;1H~                                                                                                                                                                                                [27;1H~                                                                                                                                                                                                [28;1H~                                                                                                                                                                                                [29;1H~                                                                                                                                                                                                [30;1H~                                                                                                                                                                                                [31;1H~                                                                                                                                                                                                [32;1H~                                                                                                                                                                                                [33;1H~                                                                                                                                                                                                [34;1H~                                                                                                                                                                                                [35;1H~                                                                                                                                                                                                [36;1H~                                                                                                                                                                                                [37;1H~                                                                                                                                                                                                [38;1H~                                                                                                                                                                                                [39;1H~                                                                                                                                                                                                [40;1H~                                                                                                                                                                                                [41;1H~                                                                                                                                                                                                [42;1H~                                                                                                                                                                                                [43;1H~                                                                                                                                                                                                [44;1H~                                                                                                                                                                                                [45;1H~                                                                                                                                                                                                [46;1H~                                                                                                                                                                                                [47;1H~                                                                                                                                                                                                [48;1H~                                                                                                                                                                                                [49;1H~                                                                                                                                                                                                [50;1H~                                                                                                                                                                                                [51;1H~                                                                                                                                                                                                [52;1H~                                                                                                                                                                                                [53;1H~                                                                                                                                                                                                [m[54;176H1,1[11CAll[1;1H[?12l[?25h[?25l[54;176H2[2;1H[?12l[?25h[?25l[2;53r[53;1H
+[1;54r[53;1H[94m~                                                                                                                                                                                                [m[54;1H[K[54;176H2,1[11CAll[2;1H[?12l[?25h[?25l[54;1H[1m-- INSERT --[m[54;176H[K[54;176H2,1[11CAll[2;1H[?12l[?25h[?25l[2;1H[K[3;1H[35mend[m[3;4H[K[54;176H3[3;1H[?12l[?25h[?25l[54;176H2[2;1H[?12l[?25h[?25l[3;53r[3;1H[4L[1;54r[2;2H default [31mfrom[m: [35m"[m[31mdashanba.test@gmail.com[m[35m"[m[4;4H [35mdef[m [36mconfirm[m(emailadd,context)[5;8H mail([31m:to[m => emailadd, [31m:subject[m => [35m"[m[31msomeone has a question[m[35m"[m, [31m:body[m=>context)
+  [35mend[m[54;176H[K[54;176H6,6[11CAll[6;6H[?12l[?25h[54;1H[K[6;5H[?25l[54;176H6,5[11CAll[6;5H[?12l[?25h[?25l[54;176H[K[54;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"sendmail.rb" 7L, 207C written[145C6,5[11CAll[54;176H[K[54;176H6,5[11CAll[6;5H[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ ç[Ksudo rails s
+=> Booting WEBrick
+=> Rails 3.2.11 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-01-23 10:17:14] INFO  WEBrick 1.3.1
+[2013-01-23 10:17:14] INFO  ruby 1.9.3 (2011-10-30) [x86_64-linux]
+[2013-01-23 10:17:14] INFO  WEBrick::HTTPServer#start: pid=2068 port=3000
+
+
+Started GET "/" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /application.css - 304 Not Modified (22ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /teacher.css - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /jquery.js - 304 Not Modified (6ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+
+ActionController::RoutingError (No route matches [GET] "/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /application.js - 304 Not Modified (7ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/jquery.carouFredSel-6.1.1-packed.js" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /jquery.carouFredSel-6.1.1-packed.js - 304 Not Modified (2ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/1.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /1.png - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/2.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /2.png - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/5.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /5.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/4.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /4.png - 304 Not Modified (2ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/3.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /3.png - 304 Not Modified (2ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/6.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /6.png - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/7.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /7.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/8.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /8.png - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/9.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /9.png - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/10.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /10.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/11.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /11.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/12.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /12.png - 304 Not Modified (1ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/poster.png" for 140.115.84.226 at 2013-01-23 10:17:16 +0800
+Served asset /poster.png - 304 Not Modified (4ms)
+[2013-01-23 10:17:16] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Processing by HomeController#new as HTML
+  [1m[36mFeedback Load (0.4ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" [0m
+  Rendered home/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 110ms (Views: 43.4ms | ActiveRecord: 3.5ms)
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+
+ActionController::RoutingError (No route matches [GET] "/home/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:17:19 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:17:19] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started POST "/home" for 140.115.84.226 at 2013-01-23 10:17:28 +0800
+Processing by HomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l3WCyZrC8SW35trzFY63w8N3qjSAdY9bs4GjsxWqDf8=", "feedback"=>{"name"=>"匿名", "phone"=>"", "email"=>"", "topic"=>"asdsad", "context"=>"fsdfsdfsd\r\nfsdf\r\nsdf\r\nds"}, "commit"=>"確定送出"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "feedbacks" ("context", "created_at", "email", "name", "phone", "replyto", "topic", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["context", "fsdfsdfsd\nfsdf\nsdf\nds"], ["created_at", Wed, 23 Jan 2013 10:17:28 CST +08:00], ["email", ""], ["name", "匿名"], ["phone", ""], ["replyto", nil], ["topic", "asdsad"], ["updated_at", Wed, 23 Jan 2013 10:17:28 CST +08:00]]
+  [1m[35m (8.9ms)[0m  commit transaction
+
+Sent mail to changcheng.tu@gmail.com (4361ms)
+Date: Wed, 23 Jan 2013 10:17:29 +0800
+From: dashanba.test@gmail.com
+To: changcheng.tu@gmail.com
+Message-ID: <50ff4839396e7_8143f87ec13877028955@ctm135042.mail>
+Subject: someone has a question
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+test
+Redirected to http://140.114.135.42:3000/home/new
+Completed 302 Found in 4834ms (ActiveRecord: 15.7ms)
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Processing by HomeController#new as HTML
+  [1m[36mFeedback Load (0.4ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" [0m
+  Rendered home/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+
+ActionController::RoutingError (No route matches [GET] "/home/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:17:33 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:17:33] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started POST "/home" for 140.115.84.226 at 2013-01-23 10:18:30 +0800
+Processing by HomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l3WCyZrC8SW35trzFY63w8N3qjSAdY9bs4GjsxWqDf8=", "feedback"=>{"name"=>"匿名", "phone"=>"", "email"=>"", "topic"=>"ㄎ", "context"=>"ㄎ \r\nasdads\r\ndsadㄍ\r\n次"}, "commit"=>"確定送出"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "feedbacks" ("context", "created_at", "email", "name", "phone", "replyto", "topic", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["context", "ㄎ \nasdads\ndsadㄍ\n次"], ["created_at", Wed, 23 Jan 2013 10:18:30 CST +08:00], ["email", ""], ["name", "匿名"], ["phone", ""], ["replyto", nil], ["topic", "ㄎ"], ["updated_at", Wed, 23 Jan 2013 10:18:30 CST +08:00]]
+  [1m[35m (18.0ms)[0m  commit transaction
+
+Sent mail to changcheng.tu@gmail.com (3527ms)
+Date: Wed, 23 Jan 2013 10:18:30 +0800
+From: dashanba.test@gmail.com
+To: changcheng.tu@gmail.com
+Message-ID: <50ff4876683d3_8143f87e639e10029086@ctm135042.mail>
+Subject: someone has a question
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+44SOIAphc2RhZHMKZHNhZOOEjQrmrKE=
+
+Redirected to http://140.114.135.42:3000/home/new
+Completed 302 Found in 3607ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/home/new" for 140.115.84.226 at 2013-01-23 10:18:33 +0800
+Processing by HomeController#new as HTML
+  [1m[36mFeedback Load (0.4ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" [0m
+  Rendered home/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+
+ActionController::RoutingError (No route matches [GET] "/home/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:18:34 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:18:34] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/42" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Processing by HomeController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[35mFeedback Load (0.3ms)[0m  SELECT "feedbacks".* FROM "feedbacks" WHERE "feedbacks"."id" = ? LIMIT 1  [["id", "42"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" WHERE "feedbacks"."id" = ? LIMIT 1[0m  [["id", "42"]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."feedback_id" = 42
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" WHERE "feedbacks"."id" = ? LIMIT 1[0m  [["id", "42"]]
+  [1m[35mDiscuss Load (0.1ms)[0m  SELECT "discusses".* FROM "discusses" WHERE "discusses"."feedback_id" = 42
+  Rendered home/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 105ms (Views: 17.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/home/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+
+ActionController::RoutingError (No route matches [GET] "/home/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middlewa

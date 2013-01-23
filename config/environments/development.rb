@@ -36,6 +36,12 @@ Project1::Application.configure do
   config.assets.debug = true
 
   #email
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }	
-
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => 25,
+    :authentication => :login,
+    :user_name => "dashanba.test@gmail.com",
+    :password => "dashanba",
+ }
 end

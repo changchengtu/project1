@@ -6,6 +6,9 @@ class HomeController < ApplicationController
 	def test
 	end
 
+	def goal
+	end
+
 	def aboutus
 	end
 
@@ -26,6 +29,7 @@ class HomeController < ApplicationController
 		params[:feedback][:context]=params[:feedback][:context].gsub(/\r\n?/, "\n")
 		@feedback = Feedback.new(params[:feedback])
 		if @feedback.save
+			Sendmail.confirm("changcheng.tu@gmail.com",params[:feedback][:context]).deliver
 			redirect_to new_home_path
 		else
     			redirect_to home_error_path
