@@ -1063,4 +1063,251 @@ ActionController::RoutingError (No route matches [GET] "/home/jquery.jcoverflip.
   railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
   activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
   railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
-  actionpack (3.2.11) lib/action_dispatch/middlewa
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:18:36 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:18:36] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2013-01-23 10:20:11] ERROR NoMethodError: undefined method `shutdown' for nil:NilClass
+	/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/handler/webrick.rb:24:in `shutdown'
+[2013-01-23 10:20:11] INFO  going to shutdown ...
+[2013-01-23 10:20:11] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;tdog@ctm135042: ~/project1/app/mailerstdog@ctm135042:~/project1/app/mailers$ cd ..
+]0;tdog@ctm135042: ~/project1/apptdog@ctm135042:~/project1/app$ cd ..
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ cd config/environments/
+]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ ls
+development.rb  install  production.rb  test.rb
+]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ sudo vi production.rb 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"production.rb" 67L, 2482C[>c[1;1H[32mProject1[m::[32mApplication[m.configure [38;5;130mdo[m
+  [34m# Settings specified here will take precedence over those in config/application.rb[m
+
+  [34m# Code is not reloaded between requests[m
+  config.cache_classes = [31mtrue[m
+
+  [34m# Full error reports are disabled and caching is turned on[m
+  config.consider_all_requests_local       = [31mfalse[m
+  config.action_controller.perform_caching = [31mtrue[m
+
+  [34m# Disable Rails's static asset server (Apache or nginx will already do this)[m
+  config.serve_static_assets = [31mfalse[m
+
+  [34m# Compress JavaScripts and CSS[m
+  config.assets.compress = [31mtrue[m
+
+  [34m# Don't fallback to assets pipeline if a precompiled asset is missed[m
+  config.assets.compile = [31mfalse[m
+
+  [34m# Generate digests for assets URLs[m
+  config.assets.digest = [31mtrue[m
+
+  [34m# Defaults to nil and saved in location specified by config.assets.prefix[m
+  [34m# config.assets.manifest = YOUR_PATH[m
+
+  [34m# Specifies the header that your server uses for sending files[m
+  [34m# config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache[m
+  [34m# config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx[m
+
+  [34m# Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.[m
+  [34m# config.force_ssl = true[m
+
+  [34m# See everything in the log (default is :info)[m
+  [34m# config.log_level = :debug[m
+
+  [34m# Prepend all log lines with the following tags[m
+  [34m# config.log_tags = [ :subdomain, :uuid ][m
+
+  [34m# Use a different logger for distributed setups[m
+  [34m# config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)[m
+
+  [34m# Use a different cache store in production[m
+  [34m# config.cache_store = :mem_cache_store[m
+
+  [34m# Enable serving of images, stylesheets, and JavaScripts from an asset server[m
+  [34m# config.action_controller.asset_host = "http://assets.example.com"[m
+
+  [34m# Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)[m
+  [34m# config.assets.precompile += %w( search.js )[m
+
+  [34m# Disable delivery errors, bad email addresses will be ignored[m
+  [34m# config.action_mailer.raise_delivery_errors = false[m[54;176H1,1[11CTop[1;1H[?12l[?25h[?25l[54;176H2[2;1H[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ sudo vi development.rb 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"development.rb" 47L, 1632C[>c[1;1H[32mProject1[m::[32mApplication[m.configure [38;5;130mdo[m
+  [34m# Settings specified here will take precedence over those in config/application.rb[m
+
+  [34m# In the development environment your application's code is reloaded on[m
+  [34m# every request. This slows down response time but is perfect for development[m
+  [34m# since you don't have to restart the web server when you make code changes.[m
+  config.cache_classes = [31mfalse[m
+
+  [34m# Log error messages when you accidentally call methods on nil.[m
+  config.whiny_nils = [31mtrue[m
+
+  [34m# Show full error reports and disable caching[m
+  config.consider_all_requests_local       = [31mtrue[m
+  config.action_controller.perform_caching = [31mfalse[m
+
+  [34m# Don't care if the mailer can't send[m
+  config.action_mailer.raise_delivery_errors = [31mfalse[m
+
+  [34m# Print deprecation notices to the Rails logger[m
+  config.active_support.deprecation = [31m:log[m
+
+  [34m# Only use best-standards-support built into browsers[m
+  config.action_dispatch.best_standards_support = [31m:builtin[m
+
+  [34m# Raise exception on mass assignment protection for Active Record models[m
+  config.active_record.mass_assignment_sanitizer = [31m:strict[m
+
+  [34m# Log the query plan for queries taking more than this (works[m
+  [34m# with SQLite, MySQL, and PostgreSQL)[m
+  config.active_record.auto_explain_threshold_in_seconds = [31m0.5[m
+
+  [34m# Do not compress assets[m
+  config.assets.compress = [31mfalse[m
+
+  [34m# Expands the lines which load the assets[m
+  config.assets.debug = [31mtrue[m
+
+  [34m#email[m
+  config.action_mailer.delivery_method = [31m:smtp[m
+  config.action_mailer.smtp_settings = {
+    [31m:address[m => [35m"[m[31msmtp.gmail.com[m[35m"[m,
+    [31m:port[m => [31m25[m,
+    [31m:authentication[m => [31m:login[m,
+    [31m:user_name[m => [35m"[m[31mdashanba.test@gmail.com[m[35m"[m,
+    [31m:password[m => [35m"[m[31mdashanba[m[35m"[m,
+ }
+[38;5;130mend[m
+[94m~                                                                                                                                                                                                [49;1H~                                                                                                                                                                                                [50;1H~                                                                                                                                                                                                [51;1H~                                                                                                                                                                                                [52;1H~                                                                                                                                                                                                [53;1H~                                                                                                                                                                                                [m[54;176H1,1[11CAll[1;1H[?12l[?25h[?25l[54;1H[K[54;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[54;1H[K[54;1H[?1l>[?12l[?25h[?1049l]0;tdog@ctm135042: ~/project1/config/environmentstdog@ctm135042:~/project1/config/environments$ sudo vi production.rb 
+[?1049h[?1h=[1;54r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[54;1H"production.rb" 67L, 2482C[>c[1;1H[32mProject1[m::[32mApplication[m.configure [38;5;130mdo[m
+  [34m# Settings specified here will take precedence over those in config/application.rb[m
+
+  [34m# Code is not reloaded between requests[m
+  config.cache_classes = [31mtrue[m
+
+  [34m# Full error reports are disabled and caching is turned on[m
+  config.consider_all_requests_local       = [31mfalse[m
+  config.action_controller.perform_caching = [31mtrue[m
+
+  [34m# Disable Rails's static asset server (Apache or nginx will already do this)[m
+  config.serve_static_assets = [31mfalse[m
+
+  [34m# Compress JavaScripts and CSS[m
+  config.assets.compress = [31mtrue[m
+
+  [34m# Don't fallback to assets pipeline if a precompiled asset is missed[m
+  config.assets.compile = [31mfalse[m
+
+  [34m# Generate digests for assets URLs[m
+  config.assets.digest = [31mtrue[m
+
+  [34m# Defaults to nil and saved in location specified by config.assets.prefix[m
+  [34m# config.assets.manifest = YOUR_PATH[m
+
+  [34m# Specifies the header that your server uses for sending files[m
+  [34m# config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache[m
+  [34m# config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx[m
+
+  [34m# Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.[m
+  [34m# config.force_ssl = true[m
+
+  [34m# See everything in the log (default is :info)[m
+  [34m# config.log_level = :debug[m
+
+  [34m# Prepend all log lines with the following tags[m
+  [34m# config.log_tags = [ :subdomain, :uuid ][m
+
+  [34m# Use a different logger for distributed setups[m
+  [34m# config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)[m
+
+  [34m# Use a different cache store in production[m
+  [34m# config.cache_store = :mem_cache_store[m
+
+  [34m# Enable serving of images, stylesheets, and JavaScripts from an asset server[m
+  [34m# config.action_controller.asset_host = "http://assets.example.com"[m
+
+  [34m# Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)[m
+  [34m# config.assets.precompile += %w( search.js )[m
+
+  [34m# Disable delivery errors, bad email addresses will be ignored[m
+  [34m# config.action_mailer.raise_delivery_errors = false[m[54;176H1,1[11CTop[1;1H[?12l[?25h[?25l[54;176H2[2;1H[?12l[?25h[?25l[54;176H3,0-1[3;1H[?12l[?25h[?25l[1;53r[1;1H[5M[1;54r[49;2H [34m# Enable threaded mode[m
+  [34m# config.threadsafe![m
+
+  [34m# Enable locale fallbacks for I18n (makes lookups for any locale fall back to[m
+  [34m# the I18n.default_locale when a translation can not be found)[m[54;1H[K[54;176H58,1[10C35%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;2H config.i18n.fallbacks = [31mtrue[m[54;176H[K[54;176H59,1[10C42%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[54;176H[K[54;176H60,0-1[8C50%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;2H [34m# Send deprecation notices to registered listeners[m[54;176H[K[54;176H61,1[10C57%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;2H config.active_support.deprecation = [31m:notify[m[54;176H[K[54;176H62,1[10C64%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[54;176H[K[54;176H63,0-1[8C71%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;2H [34m# Log the query plan for queries taking more than this (works[m[54;176H[K[54;176H64,1[10C78%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;2H [34m# with SQLite, MySQL, and PostgreSQL)[m[54;176H[K[54;176H65,1[10C85%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;2H [34m# config.active_record.auto_explain_threshold_in_seconds = 0.5[m[54;176H[K[54;176H66,1[10C92%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[53;1H[38;5;130mend[m[54;176H[K[54;176H67,1[10CBot[53;1H[?12l[?25h[?25l[54;177H6[52;1H[?12l[?25h[?25l[54;179H2[52;2H[?12l[?25h[?25l[54;179H3[52;3H[?12l[?25h[?25l[54;179H4[52;4H[?12l[?25h[?25l[54;179H5[52;5H[?12l[?25h[?25l[54;179H6[52;6H[?12l[?25h[?25l[54;179H7[52;7H[?12l[?25h[?25l[54;179H8[52;8H[?12l[?25h[?25l[54;179H9[52;9H[?12l[?25h[?25l[54;179H10[52;10H[?12l[?25h[?25l[54;180H1[52;11H[?12l[?25h[?25l[54;180H2[52;12H[?12l[?25h[?25l[54;180H3[52;13H[?12l[?25h[?25l[54;180H4[52;14H[?12l[?25h[?25l[54;180H5[52;15H[?12l[?25h[?25l[54;180H6[52;16H[?12l[?25h[?25l[54;180H7[52;17H[?12l[?25h[?25l[54;180H8[52;18H[?12l[?25h[?25l[54;180H9[52;19H[?12l[?25h[?25l[54;179H64[52;64H[?12l[?25h[?25l
+
+[1m-- INSERT --[m[54;176H[K[54;176H66,64[9CBot[52;64H[?12l[?25h[?25l[54;180H5[52;65H[?12l[?25h[?25l[53;1H[K[54;177H7,1 [9C93%[53;1H[?12l[?25h[?25l[1;53r[53;1H
+[1;54r[54;176H[K[54;176H68,1[10C93%[53;1H[?12l[?25h[?25l[54;179H2[53;2H[?12l[?25h[?25l[54;179H3[53;3H[?12l[?25h[?25l[1;53r[1;1H[8M[1;54r[45;4H [34m#email[m
+  config.action_mailer.delivery_method = [31m:smtp[m
+  config.action_mailer.smtp_settings = {
+    [31m:address[m => [35m"[m[31msmtp.gmail.com[m[35m"[m,
+    [31m:port[m => [31m25[m,
+    [31m:authentication[m => [31m:login[m,
+    [31m:user_name[m => [35m"[m[31mdashanba.test@gmail.com[m[35m"[m,
+    [31m:password[m => [35m"[m[31mdashanba[m[35m"[m,
+ }[54;176H[K[54;176H76,3[10C95%[47;40H[106m{[
