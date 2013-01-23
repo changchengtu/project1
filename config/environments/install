@@ -2847,4 +2847,1140 @@ Served asset /defaults.js - 404 Not Found (2ms)
 ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
   actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-  railties (3
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:30:44 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:30:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:30:44 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:30:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2013-01-23 10:30:49] INFO  going to shutdown ...
+[2013-01-23 10:30:49] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;tdog@ctm135042: ~/project1/app/views/hometdog@ctm135042:~/project1/app/views/home$ cd..
+cd..: command not found
+]0;tdog@ctm135042: ~/project1/app/views/hometdog@ctm135042:~/project1/app/views/home$ cd .
+]0;tdog@ctm135042: ~/project1/app/views/hometdog@ctm135042:~/project1/app/views/home$ cd ..
+]0;tdog@ctm135042: ~/project1/app/viewstdog@ctm135042:~/project1/app/views$ cd ..
+]0;tdog@ctm135042: ~/project1/apptdog@ctm135042:~/project1/app$ cd ..
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git add .
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git commit -m tset
+[master 45f4533] tset
+ 2 files changed, 1398 insertions(+), 2 deletions(-)
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo git push heroku master
+Enter passphrase for key '/root/.ssh/id_rsa': 
+Counting objects: 17, done.
+Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
+Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  77% (7/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)   Writing objects: 100% (9/9), 5.76 KiB, done.
+Total 9 (delta 8), reused 0 (delta 0)
+-----> Ruby/Rails app detected
+-----> Installing dependencies using Bundler version 1.3.0.pre.5
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin --deployment
+       Using rake (10.0.3)
+       Using i18n (0.6.1)
+       Using multi_json (1.5.0)
+       Using activesupport (3.2.11)
+       Using builder (3.0.4)
+       Using activemodel (3.2.11)
+       Using erubis (2.7.0)
+       Using journey (1.0.4)
+       Using rack (1.4.4)
+       Using rack-cache (1.2)
+       Using rack-test (0.6.2)
+       Using hike (1.2.1)
+       Using tilt (1.3.3)
+       Using sprockets (2.2.2)
+       Using actionpack (3.2.11)
+       Using mime-types (1.19)
+       Using polyglot (0.3.3)
+       Using treetop (1.4.12)
+       Using mail (2.4.4)
+       Using actionmailer (3.2.11)
+       Using arel (3.0.2)
+       Using tzinfo (0.3.35)
+       Using activerecord (3.2.11)
+       Using activeresource (3.2.11)
+       Using bcrypt-ruby (3.0.1)
+       Using coffee-script-source (1.4.0)
+       Using execjs (1.4.0)
+       Using coffee-script (2.2.0)
+       Using rack-ssl (1.3.2)
+       Using json (1.7.6)
+       Using rdoc (3.12)
+       Using thor (0.16.0)
+       Using railties (3.2.11)
+       Using coffee-rails (3.2.2)
+       Using orm_adapter (0.4.0)
+       Using warden (1.2.1)
+       Using devise (2.2.2)
+       Using jquery-rails (2.1.4)
+       Using pg (0.14.1)
+       Using bundler (1.3.0.pre.5)
+       Using rails (3.2.11)
+       Using sass (3.2.5)
+       Using sass-rails (3.2.6)
+       Using uglifier (1.3.0)
+       Your bundle is complete! It was installed into ./vendor/bundle
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       rake aborted!
+       could not connect to server: Connection refused
+       Is the server running on host "127.0.0.1" and accepting
+       TCP/IP connections on port 5432?
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `initialize'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `new'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `connect'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:326:in `initialize'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/model_schema.rb:308:in `clear_cache!'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.11/lib/active_record/railtie.rb:97:in `block (2 levels) in <class:Railtie>'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:418:in `_run__392070926399288842__prepare__1719052449576973516__callbacks'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:48:in `prepare!'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application/finisher.rb:47:in `block in <module:Finisher>'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:30:in `instance_exec'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:30:in `run'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:55:in `block in run_initializers'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:54:in `each'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/initializable.rb:54:in `run_initializers'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:136:in `initialize!'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/railtie/configurable.rb:30:in `method_missing'
+       /tmp/build_3f95vyshjotf3/config/environment.rb:5:in `<top (required)>'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `require'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `block in require'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:236:in `load_dependency'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.11/lib/active_support/dependencies.rb:251:in `require'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:103:in `require_environment!'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:297:in `block (2 levels) in initialize_tasks'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:93:in `block (2 levels) in <top (required)>'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:60:in `block (3 levels) in <top (required)>'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:23:in `invoke_or_reboot_rake_task'
+       /tmp/build_3f95vyshjotf3/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.11/lib/sprockets/assets.rake:29:in `block (2 levels) in <top (required)>'
+       Tasks: TOP => environment
+       (See full trace by running task with --trace)
+       Precompiling assets failed, enabling runtime asset compilation
+       Injecting rails31_enable_runtime_asset_compilation
+       Please see this article for troubleshooting help:
+       http://devcenter.heroku.com/articles/rails31_heroku_cedar#troubleshooting
+-----> Rails plugin injection
+       Injecting rails_log_stdout
+       Injecting rails3_serve_static_assets
+-----> Discovering process types
+       Procfile declares types      -> (none)
+       Default types for Ruby/Rails -> console, rake, web, worker
+-----> Compiled slug size: 19.2MB
+-----> Launching... done, v29
+       http://hakkaspots.herokuapp.com deployed to Heroku
+
+To git@heroku.com:hakkaspots.git
+   14c9ed0..45f4533  master -> master
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ rails s
+=> Booting WEBrick
+=> Rails 3.2.11 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-01-23 10:42:52] INFO  WEBrick 1.3.1
+[2013-01-23 10:42:52] INFO  ruby 1.9.3 (2011-10-30) [x86_64-linux]
+[2013-01-23 10:42:52] INFO  WEBrick::HTTPServer#start: pid=3341 port=3000
+
+
+Started GET "/" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /application.css - 304 Not Modified (22ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /home.css - 304 Not Modified (5ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+
+ActionController::RoutingError (No route matches [GET] "/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /jquery.js - 304 Not Modified (4ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /teacher.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /application.js - 304 Not Modified (4ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.carouFredSel-6.1.1-packed.js" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /jquery.carouFredSel-6.1.1-packed.js - 304 Not Modified (2ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/1.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /1.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/4.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /4.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/2.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/3.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /3.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/5.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /5.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/8.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /8.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/6.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /6.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/7.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /7.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/9.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /9.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/10.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /10.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/11.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /11.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/poster.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /poster.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/12.png" for 140.115.84.226 at 2013-01-23 10:42:54 +0800
+Served asset /12.png - 304 Not Modified (1ms)
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:54] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/users/sign_in" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 97ms (Views: 18.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/users/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+
+ActionController::RoutingError (No route matches [GET] "/users/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:42:56 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:42:56] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started POST "/users/sign_in" for 140.115.84.226 at 2013-01-23 10:42:58 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l3WCyZrC8SW35trzFY63w8N3qjSAdY9bs4GjsxWqDf8=", "user"=>{"email"=>"changcheng.tu@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'changcheng.tu@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-01-22 14:31:28.993011', "current_sign_in_at" = '2013-01-23 02:42:58.694099', "last_sign_in_ip" = '36.228.71.125', "current_sign_in_ip" = '140.115.84.226', "sign_in_count" = 24, "updated_at" = '2013-01-23 02:42:58.696791' WHERE "users"."id" = 1[0m
+SQLite3::ReadOnlyException: attempt to write a readonly database: UPDATE "users" SET "last_sign_in_at" = '2013-01-22 14:31:28.993011', "current_sign_in_at" = '2013-01-23 02:42:58.694099', "last_sign_in_ip" = '36.228.71.125', "current_sign_in_ip" = '140.115.84.226', "sign_in_count" = 24, "updated_at" = '2013-01-23 02:42:58.696791' WHERE "users"."id" = 1
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 146ms
+
+ActiveRecord::StatementInvalid (SQLite3::ReadOnlyException: attempt to write a readonly database: UPDATE "users" SET "last_sign_in_at" = '2013-01-22 14:31:28.993011', "current_sign_in_at" = '2013-01-23 02:42:58.694099', "last_sign_in_ip" = '36.228.71.125', "current_sign_in_ip" = '140.115.84.226', "sign_in_count" = 24, "updated_at" = '2013-01-23 02:42:58.696791' WHERE "users"."id" = 1):
+  sqlite3 (1.3.7) lib/sqlite3/statement.rb:108:in `step'
+  sqlite3 (1.3.7) lib/sqlite3/statement.rb:108:in `block in each'
+  sqlite3 (1.3.7) lib/sqlite3/statement.rb:107:in `loop'
+  sqlite3 (1.3.7) lib/sqlite3/statement.rb:107:in `each'
+  activerecord (3.2.11) lib/active_record/connection_adapters/sqlite_adapter.rb:248:in `to_a'
+  activerecord (3.2.11) lib/active_record/connection_adapters/sqlite_adapter.rb:248:in `block in exec_query'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.11) lib/active_record/connection_adapters/sqlite_adapter.rb:242:in `exec_query'
+  activerecord (3.2.11) lib/active_record/connection_adapters/sqlite_adapter.rb:268:in `exec_delete'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/database_statements.rb:96:in `update'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `update'
+  activerecord (3.2.11) lib/active_record/persistence.rb:359:in `update'
+  activerecord (3.2.11) lib/active_record/locking/optimistic.rb:68:in `update'
+  activerecord (3.2.11) lib/active_record/attribute_methods/dirty.rb:74:in `update'
+  activerecord (3.2.11) lib/active_record/timestamp.rb:71:in `update'
+  activerecord (3.2.11) lib/active_record/callbacks.rb:272:in `block in update'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:403:in `_run__4507428105262799853__update__3592988011491305325__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_update_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.11) lib/active_record/callbacks.rb:272:in `update'
+  activerecord (3.2.11) lib/active_record/persistence.rb:348:in `create_or_update'
+  activerecord (3.2.11) lib/active_record/callbacks.rb:264:in `block in create_or_update'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:403:in `_run__4507428105262799853__save__3592988011491305325__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_save_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.11) lib/active_record/callbacks.rb:264:in `create_or_update'
+  activerecord (3.2.11) lib/active_record/persistence.rb:84:in `save'
+  activerecord (3.2.11) lib/active_record/validations.rb:50:in `save'
+  activerecord (3.2.11) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+  activerecord (3.2.11) lib/active_record/transactions.rb:259:in `block (2 levels) in save'
+  activerecord (3.2.11) lib/active_record/transactions.rb:313:in `block in with_transaction_returning_status'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.11) lib/active_record/transactions.rb:208:in `transaction'
+  activerecord (3.2.11) lib/active_record/transactions.rb:311:in `with_transaction_returning_status'
+  activerecord (3.2.11) lib/active_record/transactions.rb:259:in `block in save'
+  activerecord (3.2.11) lib/active_record/transactions.rb:270:in `rollback_active_record_state!'
+  activerecord (3.2.11) lib/active_record/transactions.rb:258:in `save'
+  devise (2.2.2) lib/devise/models/trackable.rb:30:in `update_tracked_fields!'
+  devise (2.2.2) lib/devise/hooks/trackable.rb:7:in `block in <top (required)>'
+  warden (1.2.1) lib/warden/hooks.rb:14:in `call'
+  warden (1.2.1) lib/warden/hooks.rb:14:in `block in _run_callbacks'
+  warden (1.2.1) lib/warden/hooks.rb:9:in `each'
+  warden (1.2.1) lib/warden/hooks.rb:9:in `_run_callbacks'
+  warden (1.2.1) lib/warden/manager.rb:53:in `_run_callbacks'
+  warden (1.2.1) lib/warden/proxy.rb:179:in `set_user'
+  warden (1.2.1) lib/warden/proxy.rb:323:in `_perform_authentication'
+  warden (1.2.1) lib/warden/proxy.rb:127:in `authenticate!'
+  devise (2.2.2) app/controllers/devise/sessions_controller.rb:15:in `create'
+  actionpack (3.2.11) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:458:in `_run__11794957940893060__process_action__724802120660049368__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.11) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.11) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/mapper.rb:42:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__2513166985525448549__call__3592988011491305325__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+^C[2013-01-23 10:43:04] INFO  going to shutdown ...
+[2013-01-23 10:43:04] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;tdog@ctm135042: ~/project1tdog@ctm135042:~/project1$ sudo rails s
+=> Booting WEBrick
+=> Rails 3.2.11 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-01-23 10:43:09] INFO  WEBrick 1.3.1
+[2013-01-23 10:43:09] INFO  ruby 1.9.3 (2011-10-30) [x86_64-linux]
+[2013-01-23 10:43:09] INFO  WEBrick::HTTPServer#start: pid=3376 port=3000
+
+
+Started GET "/users/sign_in" for 140.115.84.226 at 2013-01-23 10:43:10 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 125ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /application.css - 304 Not Modified (24ms)
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /teacher.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/users/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+
+ActionController::RoutingError (No route matches [GET] "/users/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /application.js - 304 Not Modified (4ms)
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:43:11 +0800
+Served asset /logo.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:11] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started POST "/users/sign_in" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l3WCyZrC8SW35trzFY63w8N3qjSAdY9bs4GjsxWqDf8=", "user"=>{"email"=>"changcheng.tu@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'changcheng.tu@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-01-22 14:31:28.993011', "current_sign_in_at" = '2013-01-23 02:43:12.675226', "last_sign_in_ip" = '36.228.71.125', "current_sign_in_ip" = '140.115.84.226', "sign_in_count" = 24, "updated_at" = '2013-01-23 02:43:12.678378' WHERE "users"."id" = 1[0m
+  [1m[35m (8.1ms)[0m  commit transaction
+Redirected to http://140.114.135.42:3000/
+Completed 302 Found in 181ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+
+ActionController::RoutingError (No route matches [GET] "/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.carouFredSel-6.1.1-packed.js" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /jquery.carouFredSel-6.1.1-packed.js - 304 Not Modified (2ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/1.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /1.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/2.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /2.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/3.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /3.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/4.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /4.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/5.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /5.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:12] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/6.png" for 140.115.84.226 at 2013-01-23 10:43:12 +0800
+Served asset /6.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/8.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /8.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/7.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /7.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/9.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /9.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/11.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /11.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/10.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /10.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/12.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /12.png - 304 Not Modified (1ms)
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/poster.png" for 140.115.84.226 at 2013-01-23 10:43:13 +0800
+Served asset /poster.png - 304 Not Modified (3ms)
+[2013-01-23 10:43:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/teacher/new" for 140.115.84.226 at 2013-01-23 10:43:14 +0800
+Processing by TeacherController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mFeedback Load (0.4ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" [0m
+  Rendered teacher/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 48ms (Views: 24.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/teacher/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+
+ActionController::RoutingError (No route matches [GET] "/teacher/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:43:15 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:43:15] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/teacher/1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Processing by TeacherController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mFeedback Load (0.2ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" WHERE "feedbacks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "feedbacks".* FROM "feedbacks" WHERE "feedbacks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."feedback_id" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "feedbacks".* FROM "feedbacks" WHERE "feedbacks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mDiscuss Load (0.2ms)[0m  [1mSELECT "discusses".* FROM "discusses" WHERE "discusses"."feedback_id" = 1[0m
+  Rendered teacher/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 115ms (Views: 22.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/teacher/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+
+ActionController::RoutingError (No route matches [GET] "/teacher/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/defaults.js" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /defaults.js - 404 Not Found (24ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 140.115.84.226 at 2013-01-23 10:43:17 +0800
+Served asset /logo.png - 304 Not Modified (0ms)
+[2013-01-23 10:43:17] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/teacher/new" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Processing by TeacherController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mFeedback Load (0.3ms)[0m  [1mSELECT "feedbacks".* FROM "feedbacks" [0m
+  Rendered teacher/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.5ms)
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/teacher.css?body=1" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /teacher.css - 304 Not Modified (0ms)
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-01-23 10:44:13] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/teacher/jquery.jcoverflip.js" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+
+ActionController::RoutingError (No route matches [GET] "/teacher/jquery.jcoverflip.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 140.115.84.226 at 2013-01-23 10:44:13 +0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 140.115.84.226 at 2013-01-23 10
