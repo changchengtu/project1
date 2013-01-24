@@ -15,6 +15,9 @@ class HomeController < ApplicationController
 	def error
 	end
 
+	def feel
+	end
+
 	def dreamcoffee
 	end
 
