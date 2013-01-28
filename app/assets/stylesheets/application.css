@@ -95,7 +95,10 @@
 			}
 
 
-
+.background-size {
+  width: 100px;
+  height: 100px;
+}
 
 .ui-jcoverflip {
   position: relative;
